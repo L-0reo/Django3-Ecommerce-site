@@ -1,0 +1,1649 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dozator de săpun cu senzor Fizzy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/balloon.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/media.css' %}">
+
+
+      <link rel="stylesheet" type="text/css" href="{% static 'css/fixes.css' %}">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}" type="text/css" media="screen">
+
+    <!-- Fancy input fields -->
+    <link rel="stylesheet" href="{% static 'css/finput.css' %}">
+
+            <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window,document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1877110659219568'); // Insert your pixel ID here.
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none" alt=""
+                       src="https://www.facebook.com/tr?id=1877110659219568&ev=PageView&noscript=1"
+            /></noscript>
+        <!-- DO NOT MODIFY -->
+        <!-- End Facebook Pixel Code -->
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33872663-86"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+
+            gtag('config', 'UA-33872663-86', { 'optimize_id': 'GTM-P7V5X9B'});
+                        gtag('config', 'AW-773426472');
+                    </script>
+
+	<!-- Global site tag (gtag.js) - Google Ads: 615933939 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-615933939"></script>
+	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-615933939'); </script>
+	<style type="text/css">
+	/*product list center fix*/
+	#section_products .grid{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-flow: wrap;
+	}
+	/*bades overflow fix*/
+	[data-balloon-length=fit]:after{
+		box-sizing: border-box;
+	}
+
+	@media only screen and (max-width: 900px){
+		input[type="submit"] {
+		    width: 50% !important;
+		    margin-left: auto !important;
+		    margin-right: auto !important;
+		}
+	}
+	@media only screen and (max-width: 370px){
+		input[type="submit"] {
+			width: 75% !important;
+			margin: auto !important;
+		}
+	}
+</style>
+		<style type="text/css">
+			@media only screen and (min-width: 1024px) and (max-width : 1366px){
+				.intro_content > h1{
+					font-size:40px;
+				}
+			}
+			@media only screen and (min-width: 900px) and (max-width : 1366px){
+				.intro_content > h1{
+					padding-top:25px;
+				}
+				.intro_content > .font_larger{
+					padding-top:1rem;
+				}
+				.intro_content > .ribbon_wrap{
+					padding: 0.2rem 0 0;
+				}
+				.intro_content > .intro_btn_wrap{
+					padding-top:1rem;
+				}
+			}
+		</style>
+	</head>
+
+<body>
+<div class="wrap">
+    <span class="arw"></span>
+
+    <div class="intro">
+        <div class="wrap">
+            <div class="mycounter__wrap">
+                <p class="font_huge align-center no-padding-top">Comandă dozatorul tău de săpun cu senzor Fizzy!</p>
+                <p class="font_larger shaded align-center no-padding-top">OFERTA SE ÎNCHEIE ÎN:</p>
+                <div id="vip__top" class="mycounter"></div>
+            </div>
+            <div class="clmn_2 float-right">
+                <div class="main-carousel fadeInDown">
+                    <div class="carousel-cell"><img class="img_main" src="product-img/slide-1.jpg" alt="" /></div>
+                    <div class="carousel-cell"><img class="img_main" src="product-img/slide-2.jpg" alt="" /></div>
+                    <div class="carousel-cell"><img class="img_main" src="product-img/slide-3.jpg" alt="" /></div>
+                    <!--<div class="carousel-cell"><img class="img_main" src="product-img/slide-4.jpg" alt="" /></div>-->
+                    <div class="carousel-cell"><img class="img_main" src="product-img/slide-5.jpg" alt="" /></div>
+                </div>
+            </div>
+            <div class="clmn_2">
+                <div class="intro_content fadeInRight">
+                    <h1>Dozator de săpun cu senzor Fizzy</h1>
+                    <!--<h3 style="font-size:25px;">Pentru experiență și fotografii uluitoare</h3>-->
+                    <p class="ribbon_wrap no-padding-top"><span class="ribbon ribbon_main"><span>233LEI</span> 135LEI</span></p>
+                    <p class="font_large no-padding-top color_price">Economisește 42%</p>
+                    <p class="awesome">
+						<span data-balloon-length="medium" data-balloon="Plătește în numerar la livrare, cu PayPal sau card de credit" data-balloon-pos="up" class="inline-block">
+							<img class="ico_payment" src="img/ico-Cash-In-Hand.png" alt="" />
+							<img class="ico_payment" src="img/ico-Visa.png" alt="" />
+							<img class="ico_payment" src="img/ico-Mastercard-Filled.png" alt="" />
+							<img class="ico_payment" src="img/ico-PayPal.png" alt="" />
+							<img class="ico_payment" src="img/ico-asterisk.png" alt="" />
+						</span>
+                    </p>
+                    <p class="ribbon_wrap"><span style="display:inline-block;" data-balloon-length="medium" data-balloon="Vei primi comanda într-un timp record de 1-3 zile lucrătoare!" data-balloon-pos="up"><span class="ribbon">LIVRARE GRATUITĂ</span></span></p>
+                    <p class="font_larger"><span class="assistance"><span class="shaded">Suport:</span> <span class="font_larger"><a class="telstyle" href="tel:0040312297738">031-229-7738</a> <span class="mail_break_line_intro"><span class="shaded">|</span> <a class="mailstyle" href="/cdn-cgi/l/email-protection#6b19042b1846060a05020a45080406"><span class="__cf_email__" data-cfemail="691b06291a440408070008470a0604">[email&#160;protected]</span></a></span></span></span></p>
+                    <p class="font_large intro_btn_wrap"><a class="btn scrollPage jello jello_delay" title="Click aici pentru a comanda!" href="#order">COMANDĂ AICI!</a></p>
+                </div>
+            </div><div class="spacer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="clmn_2_no_margin_wrap">
+            <div class="clmn_2">
+                <div class="product_img">
+                    <img class="img_max" src="product-img/middle.jpg" alt="" />
+                </div>
+            </div>
+            <div class="clmn_2">
+                <p class="no-padding-top font_larger">NOU! <em>Dozator de săpun cu senzor Fizzy</em></p>
+                <p class="font_large color em-padding">Activarea prin senzor ajută la păstrarea unei igiene corespunzătoare!</p>
+                <p><b>Copiii tăi vor adora </b> noul dozator automat de săpun și  <b>vor dori să se spele pe mâini cu săpun spumă</b> de multe ori pe zi. Adulții apreciază <b>designul modern și senzorul automat,</b> care detectează mâna ușor și rapid.</p>
+                <!--<p>S to napravo boste vaš pridelek in druge velike količine živil hitro pospravili, zamrznili in dodali k vaši ozimnici!</p>
+                <div class="float_icon">
+                     <img class="logo" src="img/small3.jpg" alt="" />
+                 </div>-->
+                <div class="float_text">
+                    <p class="bold">Caracteristici care conving: </p>
+
+                    <ul class="list_pointer">
+                        <li><span>Senzor infraroșu, fără atingere - mai igienic și mai convenabil</span></li>
+                        <li><span>Detectează mâna în doar 0,25 secunde</span></li>
+                        <li><span>Dozează automat cantitatea potrivită de săpun spumă </span></li>
+                        <!--<li><span>10 tablete efervescente cu efect dezinfectant incluse în set </span></li>-->
+                 </ul>
+                </div><div class="spacer"></div>
+                <p class="font_larger color">DISPONIBILITATE: <font color="cc2014">23</font> de dozatoare de săpun Fizzy rămase.<br />Produsele se vor termina în mai puțin de 24 de ore.</p>                <p class="font_larger no-padding-top"><a class="scrollPage link"  title="Click aici pentru a comanda!" href="#order">Comandă acum și economisește &minus;42%.</a></p>
+            </div><div class="spacer"></div>
+        </div>
+    </div>
+
+    <div class="layout section" id="section_products">
+        <h2 class="section_btn">Comandă astăzi dozatorul tău de săpun cu senzor Fizzy!</h2>
+        <section class="inner">
+
+            <ul class="grid">
+
+
+                    <li class="grid-tile">
+                    <div class="item"><div data-variation="avmil" class="item-img scrollToForm" style="background-image: url(product-img/var-1.jpg); background-size: 105%; background-position: center center;"><div class="triangle-topleft"><div class="popust">-42%</div></div></div>
+                        <div class="item-pnl">
+                            <div class="pnl-wrapper">
+                                <div class="pnl-description">
+                                    <span class="pnl-label">Dozator de săpun cu senzor Fizzy</span>
+                                    <span class="pnl-price">135,00 LEI</span>
+                                </div>
+                                <div class="pnl-tocart">
+                                    <div>
+                                        <a class="product-anchor scrollPage" href="#order"><div data-variation="avmil" class="btn1">Comandă aici!</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="section section_bg">
+        <h2>Avantaje, beneficii și caracteristici</h2>
+        <div class="list_wrap">
+            <div class="clmn_2 img_list_top">
+                <img class="img_list" src="product-img/small-1.jpg" alt="" />
+            </div>
+            <div class="clmn_2">
+                <div class="section_list">
+                    <div class="absolute">
+                        <ul class="list">
+                            <li>Practic și convenabil</li>
+                            <br>
+                            <li>Dozează rapid și ușor cantitatea potrivită de săpun spumă </li>
+                            <br>
+                            <li>Durează mai mult decât săpunul lichid obișnuit</li>
+                            <br>
+                            <li>Non-toxic, antibacterian <!--și delicat cu pielea--> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="spacer"></div>
+            <div class="clmn_2 img_list_bottom float-right">
+                <img class="img_list" src="product-img/small-2.jpg" alt="" />
+            </div>
+            <div class="clmn_2 ">
+                <div class="section_list section_list_alt">
+                    <div class="absolute">
+                        <ul class="list">
+                            <li>Distanța de detectare: < 10 cm </li>
+                            <br>
+                            <li>Rezistent la apă </li>
+                            <br>
+                            <li>Alimentat cu baterii (nu sunt incluse) </li>
+                            <br>
+                            <li>Dimensiuni: 11 × 20 cm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="spacer"></div>
+        </div>
+    </div>
+    <div class="section_btn">
+        <p class="font_large no-padding-top"><span class="btn_break_line">Nu rata oferta noastră specială!</span> <a class="btn btn_animate scrollPage" title="Click aici pentru a comanda!" href="#order">COMANDĂ ACUM!</a></p>
+    </div>
+    <div class="section section_bg section_gift">
+        <div class="clmn_2_margin">
+            <div class="gift_wrap">
+                <div class="gift_img"><img src="img/gift.png" alt="" /></div>
+                <div class="gift_txt">
+                    <p class="font_larger">Livrare rapidă</p>
+                    <p>Ştim cât de important este timpul, de aceea livrăm cât de rapid posibil.</p>
+                </div><div class="spacer"></div>
+            </div>
+        </div>
+        <div class="clmn_2_margin">
+            <div class="gift_wrap">
+                <div class="gift_img"><img src="img/warranty.png" alt="" /></div>
+                <div class="gift_txt">
+                    <p class="font_larger">Satisfacție garantată</p>
+                    <p>Mulțumirea clienților înseamnă foarte mult pentru noi. Ne străduim să oferim produse utile, de înaltă calitate, în fiecare zi, pentru a vă asigura satisfacția 100%.</p>
+                </div><div class="spacer"></div>
+            </div>
+        </div><div class="spacer"></div>
+    </div>
+    <!--<div class="section_bg">
+        <div class="gallery-carousel">
+            <div class="gallery-cell"><img src="product-img/mid-1.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-2.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-3.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-4.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-5.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-6.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-7.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-8.jpg" alt="" /></div>
+        </div>
+    </div> -->
+    <div class="section section_bg section_extra_padding">
+        <div class="quotes">
+            <span class="quote quote_left"><img src="img/quote-left.png" alt="" /></span>
+            <span class="quote quote_right"><img src="img/quote-right.png" alt="" /></span>
+            <div class="quotes-carousel">
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="section_icon" src="img/ico-users.png" alt="" />
+    </div><!--
+    <div class="section_btn">
+        <p class="font_large no-padding-top"><span class="btn_break_line">Nu rata oferta noastră specială!</span> <a class="btn btn_animate scrollPage" title="Click here to order!" href="#order">Order Now!</a></p>
+    </div>
+
+    <div class="section_btn">
+        <p class="font_large no-padding-top"><span class="btn_break_line">Nu rata oferta noastră specială! </span> <a class="btn btn_animate scrollPage" title="Click aici pentru a comanda!" href="#order">COMANDĂ ACUM!</a></p>
+    </div>
+    <div class="section_bg_2">
+        <div class="gallery-carousel gallery-carousel-1">
+            <div class="gallery-cell"><img src="product-img/mid-6n.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-7n.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-8n.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-9n.jpg" alt="" /></div>
+            <div class="gallery-cell"><img src="product-img/mid-10n.jpg" alt="" /></div>
+        </div>
+    </div>-->
+    <div class="section section_bg_2 section_order" id="section">
+        <p class="font_huge align-center no-padding-top">Comandă dozatorul tău de săpun cu senzor Fizzy! </p>
+        <p class="font_larger shaded align-center no-padding-top">OFERTA SE ÎNCHEIE ÎN:</p>
+        <div id="vip" class="mycounter"></div>
+        <div class="clmn_3">
+            <div class="intro_content">
+                <p class="ribbon_wrap no-padding-top"><span class="ribbon ribbon_main"><span>233LEI</span> 135LEI</span></p>
+                <p class="font_large no-padding-top color_price">Economisește 42%</p>
+                <p class="awesome">
+					<span data-balloon-length="medium" data-balloon="Plătește în numerar la livrare, cu PayPal sau card de credit" data-balloon-pos="up" class="inline-block">
+						<img class="ico_payment" src="img/ico-Cash-In-Hand.png" alt="" />
+						<img class="ico_payment" src="img/ico-Visa.png" alt="" />
+						<img class="ico_payment" src="img/ico-Mastercard-Filled.png" alt="" />
+						<img class="ico_payment" src="img/ico-PayPal.png" alt="" />
+						<img class="ico_payment" src="img/ico-asterisk.png" alt="" />
+					</span>
+                </p>
+                <p class="ribbon_wrap"><span style="display:inline-block;" data-balloon-length="medium" data-balloon="Vei primi comanda într-un timp record de 1-3 zile lucrătoare!!" data-balloon-pos="up"><span class="ribbon">LIVRARE GRATUITĂ</span></span></p>
+                <p class="font_larger"><span class="assistance"><span class="shaded">Suport:</span> <span class="font_larger"><a class="telstyle" href="tel:0040312297738">031-229-7738</a>
+				<span class="mail_break_line"><span class="shaded">|</span> <a class="mailstyle" href="/cdn-cgi/l/email-protection#e79588a794ca8a86898e86c984888a"><span class="__cf_email__" data-cfemail="3f4d507f4c12525e51565e115c5052">[email&#160;protected]</span></a></span></span></span></p>
+            </div>
+        </div>
+        <div id="ordina"></div>
+        <div class="clmn_3">
+            <div id="order" class="contactForm">
+                <div id="section_order2"></div>
+                <div style="text-align: center;"> <div id="metoda" class="font_larger">Formular de comandă</div></div>
+                <!--radio buttons -->
+
+                <div style="text-align: center;">
+                    <div class="toggle-button toggle-button--valo">
+                        <input id="povzetje-radio" name="radio1" type="radio" checked="checked" >
+                        <label class="form_bnt_one" for="povzetje-radio" data-text="La livrare (Comision +3,99LEI)"></label>
+                        <div class="toggle-button__icon"></div>
+                    </div>
+
+                    <div class="toggle-button toggle-button--valo">
+                        <input id="braintree-radio" name="radio1" type="radio">
+                        <label for="braintree-radio" data-text="Card de credit/Paypal"></label>
+                        <div class="toggle-button__icon"></div>
+                    </div>
+                </div>
+                <!--radio buttons -->
+                <br>
+                <img class="slika-narocilnica img_order" src="product-img/var-1.jpg" alt="" />
+
+                <form id="order_form" action="success.php" method="post" >
+                    <div class="finput-c finput-c9">
+                        <div class="finput field-wrap field-wrap-mobile-full">
+                            <label for="name">Nume și prenume <span class="brand">*</span></label>
+                            <input type="text" name="name" id="name" class="input-text" required />
+                        </div>
+                                                    <div class="finput field-wrap active" style="height: 38px;">
+                                <label for="state">Județ<span class="brand">*</span></label>
+                                <select class="kolicina poljeSelect4 state" name="state" id="state" style="margin-bottom: 0;" required>
+
+                                </select>
+                            </div>
+                            <div class="finput field-wrap active" style="height: 38px;">
+                                <label for="city">Oraș<span class="brand">*</span></label>
+                                <select class="kolicina poljeSelect4 city" name="city" id="city" style="margin-bottom: 0;" required>
+
+                                </select>
+                            </div>
+                                <div class="finput field-wrap active" style="height: 38px;">
+                                <label for="post_number">Cod poștal (Zip)<span class="brand">*</span></label>
+                                <select class="kolicina poljeSelect4 post_number" name="post_number" id="post_number" style="margin-bottom: 0;" required>
+
+                                </select>
+                            </div>
+                                                <div class="finput field-wrap3">
+                            <label for="address">Adresă <span class="brand">*</span></label>
+                            <input type="text" name="address" id="address" class="input-text" required />
+                        </div>
+                        <div class="finput field-wrap2">
+                            <label for="house_number">Număr<span class="brand">*</span></label>
+                            <input type="text" name="house_number" id="house_number" class="input-text" required />
+                        </div>
+                        <div class="finput field-wrap">
+                            <label for="email">Email <span class="brand">*</span></label>
+                            <input type="text" name="email" id="email" class="input-text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+                        </div>
+                        <div class="finput field-wrap">
+                            <label for="phone">Număr de telefon <span class="brand">*</span></label>
+                            <input type="tel" name="phone" id="phone" class="input-text" required />
+                        </div>
+
+
+
+
+
+                            <!-- LORI -->
+
+
+
+
+
+
+
+
+
+
+                                                    <div class="finput field-wrap">
+                                <label for="quantity">Cantitate  <span class="brand">*</span></label>
+                                <input type="tel" name="quantity" id="quantity" class="input-text" maxlength="1" pattern="[1-9]" value="1" required />
+                            </div>
+
+
+
+                        <div class="field-wrap" style="width: 88%;">
+                            <div id="braintree-container" style="display: none;"></div>
+                        </div>
+                        <br>
+
+
+                        <input type="hidden" name="payment_method" value="cod" id="placilo">
+                        <input type="hidden" name="payment_method_nonce" id="payment_method_nonce">
+
+                        <div class="kaj_wrap no-mobile" style="float: none;">
+                            <img class="slika-narocilnica slika-form" src="product-img/var-1.jpg" alt="" />
+                        </div>
+
+                        <input type="submit" value="Trimite comanda" id="submit1" />
+                        <div class="spacer"></div>
+                                                    <!--AOV-START--><div class="order-bump-box">
+				    													                                        <div onclick="$(this).find('.bump-el-body').slideToggle(); $(this).find('.arrow').toggleClass( 'arrow-active' );">
+				                                            <div class="bump-el">
+				                                                <div class="bump-el-arrow">
+				                                                    <span class="arrow">
+				                                                </div>
+				                                                <div class="bump-el-title">
+				                                                    Asigurarea pachetului				                                                </div>
+
+				                                                <div class="bump-el-button">
+				                                                    <div class="bump-el-price">
+				                                                        4,99LEI
+				                                                    </div>
+				                                                    <button type="button" class="add-button-1" onclick="event.stopPropagation(); event.preventDefault(); $(this).parent().find('button').toggleClass( 'button-active' ); var text = $(this).text(); $(this).parent().find('button').text(text == 'Adaugă' ? 'Adăugat' : 'Adaugă'); $(this).parent().parent().find('input').click();">Adaugă</button>
+				                                                </div>
+				            									<input type="checkbox" style="display: none;" id="c1" name="order_bump[]" value="INSUG" />
+				                                                <div class="bump-el-body">
+				                                                    În cazul deteriorării în timpul livrării, pachetul va fi înlocuit fără alte întrebări.				                                                </div>
+				                                            </div>
+				                                        </div>
+				    													                                        <div onclick="$(this).find('.bump-el-body').slideToggle(); $(this).find('.arrow').toggleClass( 'arrow-active' );">
+				                                            <div class="bump-el">
+				                                                <div class="bump-el-arrow">
+				                                                    <span class="arrow">
+				                                                </div>
+				                                                <div class="bump-el-title">
+				                                                    LIVRARE CU PRIORITATE				                                                </div>
+
+				                                                <div class="bump-el-button">
+				                                                    <div class="bump-el-price">
+				                                                        6,99LEI
+				                                                    </div>
+				                                                    <button type="button" class="add-button-1" onclick="event.stopPropagation(); event.preventDefault(); $(this).parent().find('button').toggleClass( 'button-active' ); var text = $(this).text(); $(this).parent().find('button').text(text == 'Adaugă' ? 'Adăugat' : 'Adaugă'); $(this).parent().parent().find('input').click();">Adaugă</button>
+				                                                </div>
+				            									<input type="checkbox" style="display: none;" id="c2" name="order_bump[]" value="RUSH" />
+				                                                <div class="bump-el-body">
+				                                                    Plasează produsele comandate la începutul cozii de așteptare pentru doar 6.99 LEI				                                                </div>
+				                                            </div>
+				                                        </div>
+				    													                                        <div onclick="$(this).find('.bump-el-body').slideToggle(); $(this).find('.arrow').toggleClass( 'arrow-active' );">
+				                                            <div class="bump-el">
+				                                                <div class="bump-el-arrow">
+				                                                    <span class="arrow">
+				                                                </div>
+				                                                <div class="bump-el-title">
+				                                                    +1 an garanție				                                                </div>
+
+				                                                <div class="bump-el-button">
+				                                                    <div class="bump-el-price">
+				                                                        13,99LEI
+				                                                    </div>
+				                                                    <button type="button" class="add-button-1" onclick="event.stopPropagation(); event.preventDefault(); $(this).parent().find('button').toggleClass( 'button-active' ); var text = $(this).text(); $(this).parent().find('button').text(text == 'Adaugă' ? 'Adăugat' : 'Adaugă'); $(this).parent().parent().find('input').click();">Adaugă</button>
+				                                                </div>
+				            									<input type="checkbox" style="display: none;" id="c3" name="order_bump[]" value="WARRG" />
+				                                                <div class="bump-el-body">
+				                                                    Extinderea perioadei de garanție a produselor comandate cu 1 an.				                                                </div>
+				                                            </div>
+				                                        </div>
+				    													    							</div><!--AOV-END-->
+                                            </div>
+                </form>
+
+            </div>
+            <p class="align-center font_larger">Peste 582.300 de clienți mulțumiți.</p>
+        </div><div class="spacer"></div>
+    </div>
+    <div class="section section_bg section_extra_padding section_faq">
+        <h2 class="no-mrg-bottom">FAQ - Întrebări frecvente</h2>
+        <p class="align-center no-padding-top">Răspundem imediat la toate întrebările: <span class="bold"><a class="mailstyle" href="/cdn-cgi/l/email-protection#a5d7cae5d688c8c4cbccc48bc6cac8"><span class="__cf_email__" data-cfemail="53213c13207e3e323d3a327d303c3e">[email&#160;protected]</span></a></span></p>
+        <div class="clmn_2_margin">
+            <div class="gift_wrap faq_wrap">
+                <ul class="list_dot">
+                    <li class="font_larger">Care sunt costurile de livrare?</li>
+                    <li>Livrăm toate pachetele gratuit, tu plătești 3,99LEI comision la comenzile cu plata în numerar la livrare.</li>
+                </ul>
+                <ul class="list_dot">
+                    <li class="font_larger">Care sunt metodele de plată?</li>
+                    <li>Poți plăti în numerar la livrare, cu card de credit sau prin Paypal.</li>
+                </ul>
+                <ul class="list_dot">
+                    <li class="font_larger">Când primesc produsul?</li>
+                    <li>Îți vei primi pachetul în 1-3 zile lucrătoare.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clmn_2_margin">
+            <div class="gift_wrap faq_wrap">
+                <ul class="list_dot">
+                    <li class="font_larger">Cine este responsabil de livrare?</li>
+                    <li>Livrăm cu compania FAN Courier. Vei fi anunțat înainte de livrare prin SMS.</li>
+                </ul>
+                <ul class="list_dot">
+                    <li class="font_larger">Pot returna produsul?</li>
+                    <li>Bineînțeles, trimite-ne înapoi produsul și îți vom returna banii.</li>
+                </ul>
+                <ul class="list_dot">
+                    <li class="font_larger">Ce înseamnă garanție 100%?</li>
+                    <li>În caz de nemulțumire, îți vom returna banii fără alte întrebări!</li>
+                </ul>
+            </div>
+        </div><div class="spacer"></div>
+    </div>
+    <div class="section section_bg_3 section_padding_small">
+        <div class="badges_wrap">
+            <div class="clmn_6">
+                <div data-balloon-length="fit" data-balloon="Calitatea tuturor produselor a fost testată, asigurându-se un nivel excepțional de calitate." data-balloon-pos="up"><img class="badge" src="img/badge-kvaliteta.png" alt="" /></div>
+            </div>
+            <div class="clmn_6">
+                <div data-balloon-length="fit" data-balloon="Poți testa produsul timp de 14 zile. Dacă nu ești mulțumit, îl poți returna." data-balloon-pos="up"><img class="badge" src="img/badge-vracilo.png" alt="" /></div>
+            </div>
+            <div class="clmn_6">
+                <div data-balloon-length="fit" data-balloon="Vom face tot posibilul să îți livrăm produsul cât mai curând posibil." data-balloon-pos="up"><img class="badge" src="img/badge-dostava.png" alt="" /></div>
+            </div>
+            <div class="clmn_6">
+                <div data-balloon-length="fit" data-balloon="Dacă produsul nu ți se potrivește, îl poți returna." data-balloon-pos="up"><img class="badge" src="img/badge-garancija.png" alt="" /></div>
+            </div>
+            <div class="clmn_6">
+                <div data-balloon-length="fit" data-balloon="Cea mai bună alegere; - Peste 582.300 de clienți mulțumiți." data-balloon-pos="up"><img class="badge" src="img/badge-izbira.png" alt="" /></div>
+            </div>
+            <div class="clmn_6">
+                <div data-balloon-length="fit" data-balloon="Cumpărarea pe site-ul nostru este ușoară și sigură, și se poate completa într-un singur pas." data-balloon-pos="up"><img class="badge" src="img/badge-varen.png" alt="" /></div>
+            </div><div class="spacer"></div>
+        </div>
+    </div>
+    <div class="footer">
+    <div  class="copyd">
+        <p>
+            DFVU d.o.o. (FAN courier Chisoda)<br>            Ste Aleea Nicoresti nr 21<br>            Timisoara 300431<br>            Timis<br>            <a class="mailstyle" href="/cdn-cgi/l/email-protection#bdcfd2fdce90d0dcd3d4dc93ded2d0"><span class="__cf_email__" data-cfemail="097b66497a246468676068276a6664">[email&#160;protected]</span></a><br>
+            <a class="telstyle" href="tel:0040312297738">031-229-7738</a>
+        </p>
+    </div>
+
+        <div class="copy" style="margin-bottom: 0;">
+            <p>
+                <a class="fancybox-tos" data-fancybox-type="iframe" href="https://s-mania.com/v1-includes/tos/ro/tos.html">&copy;2020 Termeni de utilizare</a>
+            </p>
+        </div>
+        <div style="clear: both;"> </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<!-- Fancy input fields -->
+<script src="js/finput.js"></script>
+<!-- Include other scripts -->
+<script src="js/script.js"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/messages_ro.min.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.full.js"></script>
+
+      <script>
+    $(".gift_img").first().html('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve" width="100" height="100"> <style type="text/css"> .st0{display:none;} .st1{display:inline;} .st2{fill:none;stroke:#6B1D1D;stroke-width:0.5;stroke-miterlimit:10;} .st3{fill:#3A312A;} .st4{fill:#F16C7A;} .st5{fill:#D7E057;} .st6{fill:#87796F;} .st7{fill:#CE4E61;} .st8{fill-rule:evenodd;clip-rule:evenodd;fill:#D7E057;} .st9{fill-rule:evenodd;clip-rule:evenodd;fill:#FCE8CB;} .st10{fill:#B9BC39;} .st11{fill:#8AC6DD;} .st12{fill:#FCE8CB;} .st13{fill:#CCAE8B;} .st14{fill:#6B5B51;} .st15{fill:#68A8BC;} .st16{fill:#F5978A;} .st17{fill-rule:evenodd;clip-rule:evenodd;fill:#F16C7A;} .st18{fill-rule:evenodd;clip-rule:evenodd;fill:#8AC6DD;} </style> <g id="Layer_1" class="st0"> <g class="st1"> <g> <line class="st2" x1="0" y1="4.829" x2="256" y2="4.829"/> <line class="st2" x1="0" y1="16.56" x2="256" y2="16.56"/> <line class="st2" x1="0" y1="28.29" x2="256" y2="28.29"/> <line class="st2" x1="0" y1="40.021" x2="256" y2="40.021"/> <line class="st2" x1="0" y1="51.751" x2="256" y2="51.751"/> <line class="st2" x1="0" y1="63.482" x2="256" y2="63.482"/> <line class="st2" x1="0" y1="75.213" x2="256" y2="75.213"/> <line class="st2" x1="0" y1="86.943" x2="256" y2="86.943"/> <line class="st2" x1="0" y1="98.674" x2="256" y2="98.674"/> <line class="st2" x1="0" y1="110.404" x2="256" y2="110.404"/> <line class="st2" x1="0" y1="122.135" x2="256" y2="122.135"/> <line class="st2" x1="0" y1="133.865" x2="256" y2="133.865"/> <line class="st2" x1="0" y1="145.596" x2="256" y2="145.596"/> <line class="st2" x1="0" y1="157.326" x2="256" y2="157.326"/> <line class="st2" x1="0" y1="169.057" x2="256" y2="169.057"/> <line class="st2" x1="0" y1="180.788" x2="256" y2="180.788"/> <line class="st2" x1="0" y1="192.518" x2="256" y2="192.518"/> <line class="st2" x1="0" y1="204.249" x2="256" y2="204.249"/> <line class="st2" x1="0" y1="215.979" x2="256" y2="215.979"/> <line class="st2" x1="0" y1="227.71" x2="256" y2="227.71"/> <line class="st2" x1="0" y1="239.44" x2="256" y2="239.44"/> <line class="st2" x1="0" y1="251.171" x2="256" y2="251.171"/> </g> <g> <line class="st2" x1="251.171" y1="0" x2="251.171" y2="256"/> <line class="st2" x1="239.44" y1="0" x2="239.44" y2="256"/> <line class="st2" x1="227.71" y1="0" x2="227.71" y2="256"/> <line class="st2" x1="215.979" y1="0" x2="215.979" y2="256"/> <line class="st2" x1="204.249" y1="0" x2="204.249" y2="256"/> <line class="st2" x1="192.518" y1="0" x2="192.518" y2="256"/> <line class="st2" x1="180.788" y1="0" x2="180.788" y2="256"/> <line class="st2" x1="169.057" y1="0" x2="169.057" y2="256"/> <line class="st2" x1="157.326" y1="0" x2="157.326" y2="256"/> <line class="st2" x1="145.596" y1="0" x2="145.596" y2="256"/> <line class="st2" x1="133.865" y1="0" x2="133.865" y2="256"/> <line class="st2" x1="122.135" y1="0" x2="122.135" y2="256"/> <line class="st2" x1="110.404" y1="0" x2="110.404" y2="256"/> <line class="st2" x1="98.674" y1="0" x2="98.674" y2="256"/> <line class="st2" x1="86.943" y1="0" x2="86.943" y2="256"/> <line class="st2" x1="75.212" y1="0" x2="75.212" y2="256"/> <line class="st2" x1="63.482" y1="0" x2="63.482" y2="256"/> <line class="st2" x1="51.751" y1="0" x2="51.751" y2="256"/> <line class="st2" x1="40.021" y1="0" x2="40.021" y2="256"/> <line class="st2" x1="28.29" y1="0" x2="28.29" y2="256"/> <line class="st2" x1="16.56" y1="0" x2="16.56" y2="256"/> <line class="st2" x1="4.829" y1="0" x2="4.829" y2="256"/> </g> </g> </g> <g id="Layer_2"> <g> <g> <g> <path class="st5" d="M225.927,115.447c-0.974,11.564-13.025,13.39-13.025,13.39c10.347,0.487,12.925,14.059,12.925,14.059      c0.221-9.677,13.321-14.202,13.321-14.202C229.335,128.106,225.927,115.447,225.927,115.447z"/> </g> </g> <g> <g> <path class="st3" d="M239.238,127.196c-8.604-0.515-11.832-12.024-11.863-12.141c-0.19-0.702-0.85-1.161-1.584-1.102      c-0.725,0.066-1.298,0.642-1.359,1.367c-0.859,10.215-11.313,11.964-11.754,12.033c-0.763,0.115-1.313,0.79-1.273,1.561      c0.04,0.77,0.657,1.384,1.428,1.421c9.027,0.425,11.498,12.718,11.521,12.842c0.138,0.711,0.76,1.217,1.473,1.217      c0.042,0,0.084-0.001,0.126-0.005c0.764-0.064,1.357-0.693,1.375-1.459c0.194-8.509,12.191-12.777,12.313-12.819      c0.676-0.235,1.092-0.914,0.994-1.622S239.952,127.239,239.238,127.196z M225.672,137.542c-1.356-3.13-3.708-6.907-7.586-8.877      c2.931-1.405,6.408-3.913,8.201-8.272c1.551,3.071,4.2,6.88,8.334,8.722C231.614,130.755,227.698,133.521,225.672,137.542z"/> </g> </g> <g> <g> <path class="st5" d="M204.228,132.427c-0.689,8.179-9.212,9.47-9.212,9.47c7.318,0.344,9.142,9.944,9.142,9.944      c0.156-6.844,9.422-10.045,9.422-10.045C206.639,141.381,204.228,132.427,204.228,132.427z"/> </g> </g> <g> <g> <path class="st3" d="M213.67,140.299c-5.767-0.345-7.972-8.185-7.993-8.265c-0.19-0.702-0.867-1.163-1.582-1.102      c-0.726,0.065-1.3,0.642-1.361,1.368c-0.579,6.871-7.646,8.067-7.942,8.114c-0.763,0.115-1.313,0.79-1.273,1.561      c0.04,0.77,0.657,1.384,1.428,1.421c6.035,0.284,7.724,8.643,7.739,8.726c0.136,0.712,0.759,1.22,1.473,1.22      c0.041,0,0.083-0.002,0.125-0.005c0.765-0.064,1.358-0.694,1.376-1.461c0.13-5.709,8.331-8.633,8.412-8.661      c0.676-0.234,1.093-0.913,0.996-1.622C214.969,140.884,214.384,140.342,213.67,140.299z M204.085,147.094      c-0.924-1.886-2.34-3.947-4.447-5.28c1.855-1.041,3.697-2.63,4.871-4.917c1.057,1.874,2.654,3.955,4.941,5.224      C207.601,143.223,205.461,144.862,204.085,147.094z"/> </g> </g> <g> <g> <path class="st5" d="M204.228,105.77c-0.689,8.179-9.212,9.471-9.212,9.471c7.318,0.344,9.142,9.944,9.142,9.944      c0.156-6.845,9.422-10.045,9.422-10.045C206.639,114.724,204.228,105.77,204.228,105.77z"/> </g> </g> <g> <g> <path class="st3" d="M213.67,113.642c-5.767-0.345-7.972-8.186-7.993-8.265c-0.19-0.702-0.867-1.162-1.582-1.102      c-0.726,0.065-1.3,0.642-1.361,1.368c-0.579,6.871-7.646,8.067-7.942,8.114c-0.763,0.115-1.313,0.79-1.273,1.561      c0.04,0.77,0.657,1.384,1.428,1.421c6.035,0.284,7.724,8.644,7.739,8.726c0.136,0.712,0.759,1.22,1.473,1.22      c0.041,0,0.083-0.001,0.125-0.005c0.765-0.063,1.358-0.694,1.376-1.461c0.13-5.709,8.331-8.634,8.412-8.662      c0.676-0.234,1.093-0.913,0.996-1.622C214.969,114.226,214.384,113.685,213.67,113.642z M204.085,120.437      c-0.924-1.886-2.34-3.947-4.447-5.28c1.855-1.042,3.697-2.63,4.871-4.917c1.057,1.874,2.653,3.955,4.941,5.224      C207.601,116.565,205.461,118.205,204.085,120.437z"/> </g> </g> <g> <g> <path class="st4" d="M78.24,161.462v73.901c0,2.174,1.763,3.937,3.937,3.937h89.979c2.174,0,3.937-1.763,3.937-3.937v-73.901      H78.24z"/> </g> </g> <g> <g> <path class="st3" d="M176.093,159.962H78.239c-0.829,0-1.5,0.671-1.5,1.5v13.043c0,0.829,0.671,1.5,1.5,1.5      c0.829,0,1.5-0.671,1.5-1.5v-11.543h94.854v72.401c0,1.344-1.094,2.437-2.438,2.437H82.177c-1.344,0-2.438-1.093-2.438-2.437      v-46.25c0-0.829-0.671-1.5-1.5-1.5c-0.829,0-1.5,0.671-1.5,1.5v46.25c0,2.998,2.439,5.437,5.438,5.437h89.979      c2.998,0,5.438-2.439,5.438-5.437v-73.901C177.593,160.634,176.921,159.962,176.093,159.962z"/> </g> </g> <g> <g> <path class="st4" d="M180.479,145.355H75.521c-1.953,0-3.537,1.583-3.537,3.537v9.034c0,1.953,1.583,3.537,3.537,3.537h104.957      c1.953,0,3.537-1.583,3.537-3.537v-9.034C184.015,146.939,182.432,145.355,180.479,145.355z"/> </g> </g> <g> <g> <path class="st3" d="M180.479,143.855H75.521c-2.777,0-5.037,2.26-5.037,5.037v9.034c0,2.777,2.26,5.037,5.037,5.037h104.957      c2.777,0,5.037-2.259,5.037-5.037v-9.034C185.516,146.115,183.256,143.855,180.479,143.855z M182.516,157.926      c0,1.123-0.914,2.037-2.037,2.037H75.521c-1.123,0-2.037-0.914-2.037-2.037v-9.034c0-1.123,0.914-2.037,2.037-2.037h104.957      c1.123,0,2.037,0.914,2.037,2.037V157.926z"/> </g> </g> <g> <g> <rect x="109.768" y="145.355" class="st5" width="37.469" height="16.107"/> </g> </g> <g> <g> <path class="st3" d="M147.237,143.855h-37.47c-0.829,0-1.5,0.671-1.5,1.5v16.107c0,0.829,0.671,1.5,1.5,1.5h37.47      c0.828,0,1.5-0.671,1.5-1.5v-16.107C148.737,144.526,148.065,143.855,147.237,143.855z M145.737,159.962h-34.47v-13.107h34.47      V159.962z"/> </g> </g> <g> <g> <polygon class="st5" points="109.768,161.473 109.768,186.299 121.134,178.261 124.986,186.299 129.591,182.113       134.949,186.299 140.811,181.652 147.237,186.299 147.237,161.473     "/> </g> </g> <g> <g> <path class="st3" d="M147.237,159.973h-37.47c-0.829,0-1.5,0.671-1.5,1.5v24.826c0,0.561,0.313,1.074,0.81,1.332      c0.498,0.258,1.098,0.217,1.556-0.107l9.915-7.012l3.084,6.436c0.205,0.427,0.6,0.733,1.065,0.824      c0.096,0.019,0.192,0.028,0.288,0.028c0.37,0,0.73-0.137,1.009-0.39l3.669-3.336l4.361,3.408      c0.546,0.426,1.313,0.424,1.855-0.007l4.972-3.94l5.506,3.98c0.458,0.331,1.06,0.376,1.561,0.121      c0.502-0.257,0.817-0.772,0.817-1.336v-24.826C148.737,160.644,148.065,159.973,147.237,159.973z M145.737,183.363l-4.048-2.926      c-0.545-0.395-1.284-0.377-1.811,0.04l-4.936,3.913l-4.428-3.459c-0.272-0.212-0.599-0.318-0.924-0.318      c-0.362,0-0.724,0.131-1.009,0.39l-3.114,2.831l-2.981-6.221c-0.191-0.398-0.548-0.692-0.975-0.803      c-0.429-0.111-0.882-0.029-1.244,0.227l-9,6.364v-20.428h34.47V183.363z"/> </g> </g> <g> <g> <path class="st6" d="M119.083,223.643H89.861c-1.202,0-2.177,0.975-2.177,2.177v2.344c0,1.202,0.975,2.177,2.177,2.177h29.222      c1.202,0,2.177-0.975,2.177-2.177v-2.344C121.26,224.617,120.285,223.643,119.083,223.643z"/> </g> </g> <g> <g> <path class="st3" d="M119.082,222.143H89.861c-2.027,0-3.677,1.649-3.677,3.677v2.344c0,2.028,1.649,3.677,3.677,3.677h29.222      c2.028,0,3.677-1.649,3.677-3.677v-2.344C122.76,223.792,121.11,222.143,119.082,222.143z M119.76,228.164      c0,0.374-0.304,0.677-0.677,0.677H89.861c-0.373,0-0.677-0.304-0.677-0.677v-2.344c0-0.373,0.304-0.677,0.677-0.677h29.222      c0.374,0,0.677,0.304,0.677,0.677V228.164z"/> </g> </g> <g> <g> <path class="st4" d="M105.61,17.79c-0.8-0.7-1.83-1.09-2.89-1.09H80.59c-3.35,0-5.46,3.6-3.83,6.52l9.89,17.64      c0.19-0.14,0.39-0.26,0.6-0.38c8.25-4.71,19.09-8.52,31.61-11.05L105.61,17.79z"/> </g> </g> <g> <g> <path class="st3" d="M119.85,28.303l-13.252-11.642c-1.077-0.942-2.454-1.461-3.878-1.461H80.59      c-2.11,0-4.008,1.086-5.076,2.906c-1.068,1.819-1.092,4.004-0.063,5.848l9.89,17.64c0.211,0.376,0.572,0.643,0.993,0.733      c0.105,0.022,0.21,0.034,0.316,0.034c0.318,0,0.63-0.101,0.891-0.293c0.144-0.106,0.296-0.195,0.453-0.285      c8.133-4.643,18.909-8.406,31.163-10.882c0.559-0.113,1.005-0.533,1.152-1.083C120.456,29.266,120.278,28.679,119.85,28.303z       M87.206,38.783L78.07,22.488c-0.503-0.902-0.492-1.973,0.031-2.864c0.523-0.892,1.454-1.424,2.489-1.424h22.13      c0.697,0,1.372,0.255,1.9,0.717l11.004,9.667C104.61,31.039,94.851,34.539,87.206,38.783z"/> </g> </g> <g> <g> <path class="st4" d="M87.25,84.19c-0.21-0.12-0.41-0.25-0.6-0.38l-9.89,17.63c-1.63,2.92,0.48,6.52,3.83,6.52h22.13      c1.06,0,2.09-0.38,2.89-1.09l13.25-11.64C106.34,92.7,95.5,88.89,87.25,84.19z"/> </g> </g> <g> <g> <path class="st3" d="M120.309,94.843c-0.147-0.551-0.593-0.971-1.152-1.083c-12.245-2.474-23.021-6.234-31.162-10.871      c-0.173-0.1-0.339-0.208-0.496-0.315c-0.347-0.238-0.78-0.319-1.189-0.224c-0.411,0.096-0.762,0.359-0.968,0.727l-9.891,17.633      c-1.028,1.841-1.004,4.026,0.063,5.845c1.068,1.819,2.966,2.906,5.076,2.906h22.13c1.439,0,2.819-0.521,3.88-1.463l13.25-11.64      C120.278,95.98,120.456,95.394,120.309,94.843z M104.614,105.748c-0.517,0.458-1.19,0.711-1.894,0.711H80.59      c-1.035,0-1.965-0.532-2.489-1.424c-0.523-0.891-0.535-1.962-0.033-2.861l9.137-16.288c7.653,4.24,17.411,7.737,28.418,10.19      L104.614,105.748z"/> </g> </g> <g> <g> <path class="st6" d="M72.1,51.16c1.38,3.27,1.95,7.09,1.95,11.17c0,4.08-0.57,7.9-1.95,11.17h11.4V51.16H72.1z"/> </g> </g> <g> <g> <path class="st3" d="M83.5,49.66H72.1c-0.503,0-0.972,0.252-1.25,0.671c-0.278,0.419-0.328,0.949-0.132,1.412      c1.215,2.88,1.832,6.442,1.832,10.587c0,4.144-0.616,7.706-1.832,10.587c-0.196,0.463-0.146,0.993,0.132,1.412      C71.128,74.748,71.597,75,72.1,75h11.4c0.829,0,1.5-0.671,1.5-1.5V51.16C85,50.331,84.329,49.66,83.5,49.66z M82,72h-7.761      c0.871-2.812,1.311-6.053,1.311-9.67s-0.44-6.858-1.311-9.67H82V72z"/> </g> </g> <g> <g> <path class="st3" d="M181.723,144.099l-52.964-31.065c-0.469-0.274-1.049-0.274-1.518,0l-52.964,31.065      c-0.584,0.343-0.866,1.034-0.689,1.687c0.178,0.653,0.771,1.107,1.448,1.107h105.928c0.677,0,1.271-0.454,1.447-1.107      C182.589,145.133,182.307,144.442,181.723,144.099z M80.558,143.893L128,116.067l47.441,27.826H80.558z"/> </g> </g> <g> <g> <path class="st3" d="M72,154.643H40.25c-0.829,0-1.5,0.671-1.5,1.5c0,0.829,0.671,1.5,1.5,1.5H72c0.829,0,1.5-0.671,1.5-1.5      C73.5,155.315,72.829,154.643,72,154.643z"/> </g> </g> <g> <g> <path class="st3" d="M78.25,170.393H61.435c-0.829,0-1.5,0.671-1.5,1.5c0,0.829,0.671,1.5,1.5,1.5H78.25      c0.829,0,1.5-0.671,1.5-1.5C79.75,171.065,79.079,170.393,78.25,170.393z"/> </g> </g> <g> <g> <path class="st3" d="M78.25,186.143H44.106c-0.829,0-1.5,0.671-1.5,1.5c0,0.829,0.671,1.5,1.5,1.5H78.25      c0.829,0,1.5-0.671,1.5-1.5C79.75,186.815,79.079,186.143,78.25,186.143z"/> </g> </g> <g> <g> <path class="st3" d="M78.25,201.893H61.435c-0.829,0-1.5,0.671-1.5,1.5c0,0.829,0.671,1.5,1.5,1.5H78.25      c0.829,0,1.5-0.671,1.5-1.5C79.75,202.565,79.079,201.893,78.25,201.893z"/> </g> </g> <g> <g> <path class="st3" d="M78.25,217.643H44.106c-0.829,0-1.5,0.671-1.5,1.5c0,0.829,0.671,1.5,1.5,1.5H78.25      c0.829,0,1.5-0.671,1.5-1.5C79.75,218.315,79.079,217.643,78.25,217.643z"/> </g> </g> <g> <g> <path class="st3" d="M78.25,233.393H61.435c-0.829,0-1.5,0.671-1.5,1.5c0,0.829,0.671,1.5,1.5,1.5H78.25      c0.829,0,1.5-0.671,1.5-1.5C79.75,234.065,79.079,233.393,78.25,233.393z"/> </g> </g> <g> <g> <path class="st11" d="M194,31.05c-7.96-2.29-17.19-3.99-27.83-4.7c-3.6-0.24-7.37-0.37-11.31-0.37      c-27.64,0-52.17,5.69-67.61,14.5c-2.57,1.46-4.11,4.11-4.11,6.95v29.8c0,2.84,1.54,5.49,4.11,6.96      c15.44,8.8,39.97,14.49,67.61,14.49c3.94,0,7.71-0.13,11.31-0.37c10.66-0.69,19.88-2.36,27.83-4.61      c35.14-9.96,45.5-31.37,45.5-31.37S228.72,41.05,194,31.05z"/> </g> </g> <g> <g> <path class="st3" d="M240.838,61.652c-0.452-0.893-11.478-21.979-46.423-32.043c-8.641-2.486-18.11-4.086-28.146-4.755      c-3.721-0.248-7.559-0.373-11.409-0.373c-27.07,0-51.984,5.357-68.351,14.696c-3.003,1.706-4.869,4.869-4.869,8.254v29.8      c0,3.38,1.864,6.546,4.867,8.263c16.376,9.334,41.29,14.687,68.353,14.687c3.857,0,7.696-0.125,11.406-0.373      c10.034-0.649,19.503-2.219,28.143-4.664c35.381-10.028,46.006-31.261,46.441-32.16      C241.054,62.561,241.05,62.069,240.838,61.652z M193.592,92.256c-8.437,2.388-17.695,3.92-27.521,4.557      c-3.647,0.243-7.419,0.367-11.21,0.367c-26.558,0-50.931-5.21-66.866-14.292c-2.069-1.183-3.354-3.351-3.354-5.658v-29.8      c0-2.308,1.284-4.472,3.353-5.648c15.931-9.089,40.303-14.303,66.867-14.303c3.784,0,7.556,0.123,11.21,0.367      c9.822,0.655,19.079,2.218,27.515,4.645c30.187,8.694,42.027,26.228,44.199,29.855      C235.688,65.993,224.211,83.578,193.592,92.256z"/> </g> </g> <g> <g> <path class="st4" d="M53.093,40.533c-5.651,0-9.71,1.917-13.358,4.346c2.621,1.84,4.797,4.232,4.492,4.18      c-7.665-1.295-10.409,1.459-17.665,4.248c-2.807,1.079-6.028,1.67-9.986,1.385c-0.247-0.019,0.125,0.743,0.991,2.035      c1.181,1.76,2.311,3.395,3.441,4.894c0.547,0.725,1.139,1.412,1.774,2.062l1.73,1.772c3.962,4.06,9.37,6.431,15.043,6.462      c0.056,0,0.111,0,0.167,0.001c0.623,0,2.509,1.257-5.643,2.844c6.141,5.198,13.001,9.367,19.015,9.367      c16.011,0,20.962-9.761,20.962-21.798C74.055,50.294,69.104,40.533,53.093,40.533z"/> </g> </g> <g> <g> <path class="st3" d="M53.093,39.033c-6.419,0-10.775,2.324-14.19,4.598c-0.412,0.274-0.662,0.735-0.668,1.23      c-0.006,0.495,0.232,0.962,0.638,1.246c0.519,0.365,1.016,0.75,1.474,1.129c-3.839,0.057-6.561,1.285-9.796,2.744      c-1.318,0.594-2.813,1.268-4.527,1.928c-2.891,1.111-5.946,1.532-9.335,1.29c-0.577-0.05-1.183,0.272-1.472,0.768      c-0.548,0.941-0.06,1.861,1.104,3.598c0.952,1.418,2.21,3.265,3.489,4.961c0.577,0.765,1.216,1.507,1.898,2.206l1.73,1.773      c3.239,3.318,7.413,5.571,11.856,6.473c-0.448,0.1-0.947,0.205-1.503,0.314c-0.566,0.11-1.019,0.536-1.165,1.094      c-0.146,0.558,0.042,1.15,0.482,1.523c7.621,6.451,14.345,9.722,19.984,9.722c14.695,0,22.462-8.057,22.462-23.298      S67.788,39.033,53.093,39.033z M53.093,82.63c-4.283,0-9.662-2.44-15.668-7.084c3.322-0.892,4.565-1.877,4.425-3.328      c-0.108-1.126-1.168-1.798-2.129-1.798l-0.159,0c-5.183-0.029-10.277-2.22-13.978-6.01l-1.73-1.773      c-0.594-0.608-1.149-1.253-1.65-1.917c-0.906-1.201-1.885-2.588-3.146-4.46c2.84-0.057,5.49-0.57,8.041-1.551      c1.794-0.689,3.33-1.382,4.684-1.993c4.261-1.921,6.832-3.081,12.194-2.175c0.694,0.117,1.398-0.271,1.663-0.92      c0.508-1.237-1.471-3.186-3.26-4.628c2.747-1.596,6.153-2.959,10.712-2.959c13.096,0,19.462,6.64,19.462,20.298      C72.555,75.99,66.188,82.63,53.093,82.63z"/> </g> </g> <g> <g> <path class="st5" d="M59.005,46.681c-4.057,0-6.971,1.377-9.591,3.12c1.882,1.321,3.444,3.038,3.225,3.001      c-5.503-0.93-7.473,1.047-12.683,3.05c-2.015,0.775-4.328,1.199-7.169,0.995c-0.178-0.013,0.09,0.534,0.711,1.461      c4.467,6.654,7.893,10.904,15.906,10.906c0.448,0,1.801,0.902-4.052,2.042c4.409,3.732,9.335,6.725,13.652,6.725      c11.495,0,15.05-7.008,15.05-15.65C74.055,53.689,70.5,46.681,59.005,46.681z"/> </g> </g> <g> <g> <path class="st3" d="M59.005,45.181c-4.748,0-8.064,1.802-10.422,3.372c-0.413,0.274-0.663,0.734-0.669,1.23      c-0.006,0.495,0.233,0.961,0.638,1.246c0.049,0.035,0.098,0.07,0.147,0.104c-2.251,0.23-4.013,1.024-6.052,1.944      c-0.987,0.445-2.008,0.906-3.228,1.375c-2.016,0.774-4.151,1.07-6.521,0.898c-0.58-0.046-1.164,0.266-1.453,0.761      c-0.569,0.977,0.099,1.975,0.807,3.032c3.574,5.324,6.743,9.425,12.167,10.938c-0.25,0.199-0.434,0.475-0.518,0.796      c-0.146,0.558,0.042,1.15,0.482,1.523c5.55,4.698,10.469,7.08,14.622,7.08c10.827,0,16.55-5.931,16.55-17.15      C75.555,51.112,69.832,45.181,59.005,45.181z M59.005,76.482c-2.824,0-6.357-1.543-10.321-4.49      c1.826-0.59,2.791-1.351,2.67-2.604c-0.101-1.047-1.071-1.673-1.949-1.673c-6.713-0.001-9.722-3.001-14.059-9.351      c1.801-0.11,3.502-0.478,5.148-1.111c1.3-0.5,2.408-1,3.386-1.44c2.985-1.346,4.786-2.159,8.508-1.53      c0.695,0.118,1.391-0.267,1.657-0.915c0.142-0.345,0.527-1.282-1.979-3.42c1.825-0.98,4.054-1.766,6.938-1.766      c9.118,0,13.55,4.628,13.55,14.15C72.555,71.853,68.123,76.482,59.005,76.482z"/> </g> </g> <g> <g> <path class="st3" d="M128,26.81c-0.829,0-1.5,0.671-1.5,1.5v86.018c0,0.829,0.671,1.5,1.5,1.5c0.829,0,1.5-0.671,1.5-1.5V28.31      C129.5,27.481,128.829,26.81,128,26.81z"/> </g> </g> <g> <g> <path class="st4" d="M166.17,26.35v71.96c10.66-0.69,19.88-2.36,27.83-4.61V31.05C186.04,28.76,176.81,27.06,166.17,26.35z"/> </g> </g> <g> <g> <path class="st3" d="M194.415,29.608c-8.641-2.486-18.11-4.086-28.146-4.755c-0.407-0.029-0.821,0.118-1.124,0.401      c-0.304,0.283-0.476,0.68-0.476,1.095v19.356c0,0.829,0.672,1.5,1.5,1.5c0.828,0,1.5-0.671,1.5-1.5V27.961      c8.812,0.681,17.151,2.099,24.83,4.224v60.374c-7.679,2.089-16.019,3.48-24.83,4.142V59.539c0-0.829-0.672-1.5-1.5-1.5      c-0.828,0-1.5,0.671-1.5,1.5V98.31c0,0.414,0.172,0.811,0.475,1.094c0.278,0.262,0.646,0.406,1.025,0.406      c0.032,0,0.064-0.001,0.097-0.003c10.034-0.649,19.503-2.219,28.142-4.664c0.646-0.183,1.092-0.772,1.092-1.443V31.05      C195.5,30.381,195.058,29.793,194.415,29.608z"/> </g> </g> <g> <g> <path class="st12" d="M180.083,34.06c-3.574,0-6.472,2.898-6.472,6.472s2.898,6.473,6.472,6.473      c3.575,0,6.473-2.898,6.473-6.473S183.658,34.06,180.083,34.06z"/> </g> </g> <g> <g> <path class="st3" d="M180.083,32.56c-4.396,0-7.973,3.577-7.973,7.973s3.576,7.973,7.973,7.973s7.973-3.577,7.973-7.973      S184.479,32.56,180.083,32.56z M180.083,45.505c-2.742,0-4.973-2.231-4.973-4.973s2.23-4.973,4.973-4.973      s4.973,2.231,4.973,4.973S182.825,45.505,180.083,45.505z"/> </g> </g> <g> <g> <path class="st12" d="M180.083,56.337c-3.574,0-6.472,2.898-6.472,6.473s2.898,6.472,6.472,6.472      c3.575,0,6.473-2.898,6.473-6.472S183.658,56.337,180.083,56.337z"/> </g> </g> <g> <g> <path class="st3" d="M180.083,54.837c-4.396,0-7.973,3.576-7.973,7.972s3.576,7.973,7.973,7.973s7.973-3.577,7.973-7.973      S184.479,54.837,180.083,54.837z M180.083,67.782c-2.742,0-4.973-2.231-4.973-4.973s2.23-4.972,4.973-4.972      s4.973,2.23,4.973,4.972S182.825,67.782,180.083,67.782z"/> </g> </g> <g> <g> <path class="st12" d="M180.083,78.615c-3.574,0-6.472,2.898-6.472,6.472c0,3.575,2.898,6.473,6.472,6.473      c3.575,0,6.473-2.898,6.473-6.473C186.556,81.513,183.658,78.615,180.083,78.615z"/> </g> </g> <g> <g> <path class="st3" d="M180.083,77.115c-4.396,0-7.973,3.577-7.973,7.973s3.576,7.972,7.973,7.972s7.973-3.576,7.973-7.972      S184.479,77.115,180.083,77.115z M180.083,90.06c-2.742,0-4.973-2.23-4.973-4.972s2.23-4.973,4.973-4.973      s4.973,2.231,4.973,4.973S182.825,90.06,180.083,90.06z"/> </g> </g> <g> <g> <path class="st7" d="M162.84,162.96v72.4c0,1.35-1.1,2.44-2.44,2.44h11.76c1.34,0,2.43-1.09,2.43-2.44v-72.4H162.84z"/> </g> </g> <g> <g> <path class="st7" d="M180.86,146.89H169.1c0.94,0.18,1.66,1.01,1.66,2v9.04c0,1.12-0.92,2.03-2.04,2.03h11.76      c1.12,0,2.04-0.91,2.04-2.03v-9.04C182.52,147.9,181.8,147.07,180.86,146.89z"/> </g> </g> <g> <g> <path class="st15" d="M195.5,33.07v3.81c22.53,10.71,30,25.45,30,25.45s-7.21,14.9-30,25.62v3.74      c29.18-8.86,40.23-25.77,42.28-29.34C235.66,58.8,224.27,41.94,195.5,33.07z"/> </g> </g> <g> <g> <path class="st7" d="M167.67,96.49v0.21c8.81-0.66,17.15-2.05,24.83-4.14v-3.27c-3.77,1.62-7.92,3.11-12.5,4.41      C176.18,94.78,172.08,95.73,167.67,96.49z M167.67,27.96v0.25c4.41,0.78,8.52,1.75,12.33,2.84c4.57,1.32,8.73,2.83,12.5,4.47      v-3.33C184.82,30.06,176.48,28.64,167.67,27.96z"/> </g> </g> </g> </g> </svg>');
+
+    $(".gift_img").last().html('<svg height="100px" viewBox="-61 0 512 512" width="100px" xmlns="http://www.w3.org/2000/svg"><path d="m375 61h-35.097656c-50.703125 0-98.402344-20.800781-134.402344-56.5-2.699219-3-6.601562-4.5-10.5-4.5s-7.800781 1.5-10.5 4.5c-36 35.699219-83.699219 56.5-134.402344 56.5h-35.097656c-8.402344 0-15 6.597656-15 15v180c0 134.699219 98.101562 197.5 162.898438 238.300781 8.402343 5.398438 16.5 10.199219 23.699218 15.296875 2.703125 1.5 5.402344 2.402344 8.402344 2.402344s5.699219-.902344 8.402344-2.402344c6.898437-4.796875 14.699218-9.597656 23.097656-15 65.097656-40.796875 163.5-103.597656 163.5-238.597656v-180c0-8.402344-6.597656-15-15-15zm0 0" fill="#70da40"/><path d="m390 76v180c0 135-98.402344 197.800781-163.5 238.597656-8.398438 5.402344-16.199219 10.203125-23.097656 15-2.703125 1.5-5.402344 2.402344-8.402344 2.402344v-512c3.898438 0 7.800781 1.5 10.5 4.5 36 35.699219 83.699219 56.5 134.402344 56.5h35.097656c8.402344 0 15 6.597656 15 15zm0 0" fill="#49a520"/><path d="m195 121c-74.398438 0-135 60.597656-135 135 0 74.398438 60.601562 135 135 135s135-60.601562 135-135c0-74.402344-60.601562-135-135-135zm0 0" fill="#deecf1"/><path d="m330 256c0 74.398438-60.601562 135-135 135v-270c74.398438 0 135 60.597656 135 135zm0 0" fill="#c6e2e7"/><path d="m265.5 236.5-75 75c-2.699219 3-6.601562 4.5-10.5 4.5s-7.800781-1.5-10.5-4.5l-45-45c-6-5.699219-6-15.300781 0-21 5.699219-6 15.300781-6 21 0l34.5 34.199219 15-15 49.503906-49.199219c5.699219-6 15.296875-6 20.996094 0 6 5.699219 6 15.300781 0 21zm0 0" fill="#70da40"/><path d="m265.5 236.5-70.5 70.5v-42.300781l49.5-49.199219c5.699219-6 15.300781-6 21 0 6 5.699219 6 15.300781 0 21zm0 0" fill="#49a520"/></svg>');
+</script>
+
+<style>
+    .gift_img {
+        text-align: center;
+        margin: 0;
+    }
+
+    .gift_txt {
+        float: none;
+        max-width: 70%;
+        margin-left: 25%;
+        padding: 0 30px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+    	#guarantee_icons_template{
+    		max-width: 60%;
+    		margin-left: 20%;
+    	}
+    }
+    @media only screen and (max-width: 980px) {
+        .clmn_2_margin {
+            float: none;
+            margin: 0 auto;
+        }
+
+        .gift_img {
+            width: 25%;
+        }
+
+        .gift_txt {
+            max-width: 75%;
+            font-size: 14px;
+            padding-bottom: 5px;
+            margin-left: 20%;
+        }
+
+        .gift_img svg {
+            width: 60px !important;
+        }
+
+        .gift_wrap {
+            padding: 5px 15px;
+            border-radius: 0px;
+        }
+
+        /*.gift_txt p {
+            padding: 0.8em 0 0;
+        }*/
+
+        .gift_txt p.font_larger {
+            padding-top: 15px;
+        }
+
+        .section_gift {
+            padding: 20px;
+        }
+
+        .section_gift .clmn_2_margin {
+            width: 100%;
+        }
+
+        .section_gift .clmn_2_margin:nth-of-type(2) {
+            margin-top: 10px;
+        }
+
+        /*.section_extra_padding {
+            padding-bottom: 10px;
+        }*/
+
+        .faq_wrap {
+            margin: 60px 0 0;
+            border-radius: 0px !important;
+            padding: 0px !important;
+            margin-top: 20px;
+        }
+
+        .list_dot {
+            padding-top: 13px !important;
+            padding-bottom: 10px !important;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            font-size: 14px;
+        }
+
+        .list_dot li:first-child {
+            background: none !important;
+        }
+    }
+</style>
+
+
+	    <div class="new_guarantee_wrapper" style="display: none;">
+        <div id="guarantee_icons_template" style="">
+            <table>
+                <tr>
+                    <td>
+                    	<svg id="effect" height="512" viewBox="0 0 36 36" width="512" xmlns="http://www.w3.org/2000/svg"> <path d="m27.417 3.914c-6.915.129-11.732-3.365-15.064-3.302s-10.296 2.109-10.009 17.44 9.744 17.404 13.41 17.336c17.163-.321 23.911-31.703 11.663-31.474z" fill="#efefef" /> <circle cx="17" cy="28" fill="#2fdf84" r="1.5" /> <circle cx="24" cy="28" fill="#2fdf84" r="1.5" /> <path d="m30.15 14.5-3.17 8.68c-.29.79-1.04 1.32-1.88 1.32h-9.09c-.89 0-1.68-.59-1.92-1.45l-2.45-8.55z" fill="#f3f3f1" /> <path d="m24 19.5s5.5-2.321 5.5-6.964c0-1.857 0-4.179 0-4.179l-5.5-1.857-5.5 1.857v4.179c0 4.643 5.5 6.964 5.5 6.964z" fill="#2fdf84" /> <path d="m18.01 24.5h-2c-.89 0-1.68-.59-1.92-1.45l-2.45-8.55h2l2.45 8.55c.24.86 1.03 1.45 1.92 1.45z" fill="#d5dbe1" /> <path d="m25 18.98c-.59.35-1 .52-1 .52s-5.5-2.32-5.5-6.96c0-2.79 0-4.18 0-4.18l5.5-1.86 1 .34-4.5 1.52v4.18c0 3.38 2.92 5.53 4.5 6.44z" fill="#00b871" /> <path d="m17 30.25c-1.24 0-2.25-1.009-2.25-2.25s1.01-2.25 2.25-2.25 2.25 1.009 2.25 2.25-1.01 2.25-2.25 2.25zm0-3c-.413 0-.75.336-.75.75s.337.75.75.75.75-.336.75-.75-.337-.75-.75-.75z" /> <path d="m24 30.25c-1.24 0-2.25-1.009-2.25-2.25s1.01-2.25 2.25-2.25 2.25 1.009 2.25 2.25-1.01 2.25-2.25 2.25zm0-3c-.413 0-.75.336-.75.75s.337.75.75.75.75-.336.75-.75-.337-.75-.75-.75z" /> <path d="m11.75 13.75h3.75v1.5h-3.75z" /> <path d="m25.1 25.25h-9.09c-1.228 0-2.313-.822-2.643-1.999l-3.178-11.095c-.15-.536-.643-.907-1.199-.907h-2.49v-1.5h2.49c1.228 0 2.313.822 2.643 1.999l3.178 11.095c.15.536.643.907 1.199.907h9.09c.522 0 .995-.333 1.177-.828l.909-2.489 1.408.515-.909 2.49c-.398 1.084-1.437 1.812-2.585 1.812z" /> <path d="m24 20.25c-.1 0-.198-.02-.292-.059-.243-.103-5.958-2.573-5.958-7.655v-4.179c0-.322.205-.607.51-.71l5.5-1.857c.156-.053.324-.053.48 0l5.5 1.857c.305.103.51.389.51.71v4.179c0 5.082-5.715 7.553-5.958 7.655-.094.039-.192.059-.292.059zm-4.75-11.354v3.64c0 3.516 3.673 5.601 4.749 6.136 1.075-.538 4.751-2.633 4.751-6.136v-3.64l-4.75-1.604z" /> <path d="m23.5 15.25c-.014 0-.027 0-.041-.001-.214-.012-.411-.114-.545-.28l-2-2.5 1.172-.938 1.477 1.846 2.907-2.907 1.061 1.061-3.5 3.5c-.141.14-.333.219-.531.219z" /> <g fill="#a4afc1"> <path d="m5.375 1.417h1v2h-1z" /> <path d="m5.375 7.167h1v2h-1z" /> <path d="m1.875 4.667h2v1h-2z" /> <path d="m7.625 4.667h2v1h-2z" /> </g> </svg></td> <td><svg enable-background="new 0 0 36 36" height="512" viewBox="0 0 36 36" width="512" xmlns="http://www.w3.org/2000/svg"> <g id="BG"> <g> <path d="m26.982 3.914c-6.916.129-11.732-3.365-15.065-3.302s-10.296 2.109-10.009 17.44 9.744 17.404 13.41 17.336c17.164-.321 23.911-31.703 11.664-31.474z" fill="#efefef" /> </g> </g> <g id="effect"> <g> <path d="m31.25 10.555c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zm0-2c-.275 0-.5.224-.5.5s.225.5.5.5.5-.224.5-.5-.225-.5-.5-.5z" fill="#a4afc1" /> </g> <g> <g> <path d="m5.688 26.3h1v2h-1z" fill="#a4afc1" /> </g> <g> <path d="m5.688 32.05h1v2h-1z" fill="#a4afc1" /> </g> <g> <path d="m2.188 29.55h2v1h-2z" fill="#a4afc1" /> </g> <g> <path d="m7.938 29.55h2v1h-2z" fill="#a4afc1" /> </g> </g> </g> <g id="color"> <g> <circle cx="18" cy="18" fill="#f3f3f1" r="11.25" /> </g> <g> <path d="m25.75 20.75c-1.03 3.317-4.109 5.72-7.75 5.72s-6.72-2.402-7.75-5.72z" fill="#2fdf84" /> </g> </g> <g id="shadow"> <g> <path d="m9 18c0-5.833 4.44-10.629 10.125-11.193-.37-.037-.745-.057-1.125-.057-6.213 0-11.25 5.037-11.25 11.25s5.037 11.25 11.25 11.25c.38 0 .755-.02 1.125-.057-5.685-.564-10.125-5.36-10.125-11.193z" fill="#d5dbe1" /> </g> <g> <path d="m12.5 20.75h-2.25c1.03 3.317 4.109 5.72 7.75 5.72.383 0 .756-.041 1.125-.092-3.138-.438-5.704-2.66-6.625-5.628z" fill="#00b871" /> </g> </g> <g id="regular"> <g> <path d="m18 30c-6.617 0-12-5.383-12-12s5.383-12 12-12 12 5.383 12 12-5.383 12-12 12zm0-22.5c-5.79 0-10.5 4.71-10.5 10.5s4.71 10.5 10.5 10.5 10.5-4.71 10.5-10.5-4.71-10.5-10.5-10.5z" /> </g> <g> <path d="m16.25 15.5h-1.5c0-.689-.561-1.25-1.25-1.25s-1.25.561-1.25 1.25h-1.5c0-1.517 1.233-2.75 2.75-2.75s2.75 1.233 2.75 2.75z" /> </g> <g> <path d="m25.25 15.5h-1.5c0-.689-.561-1.25-1.25-1.25s-1.25.561-1.25 1.25h-1.5c0-1.517 1.233-2.75 2.75-2.75s2.75 1.233 2.75 2.75z" /> </g> <g> <path d="m18 27.22c-3.904 0-7.307-2.511-8.467-6.248-.07-.228-.028-.475.113-.667s.366-.305.604-.305h15.5c.238 0 .463.113.604.305.142.192.184.439.113.667-1.16 3.737-4.563 6.248-8.467 6.248zm-6.656-5.72c1.203 2.561 3.764 4.22 6.656 4.22s5.453-1.659 6.656-4.22z" /> </g> <g> <path d="m11.19 22h13.619v1.5h-13.619z" /> </g> </g> </svg> </td>
+                    <td>
+                    	<svg enable-background="new 0 0 36 36" height="512" viewBox="0 0 36 36" width="512" xmlns="http://www.w3.org/2000/svg"> <g id="BG"> <path d="m4.167 27.623c0-6.917-3.583-11.667-3.583-15s1.916-10.333 17.249-10.333 17.583 9.417 17.583 13.083c.001 17.167-31.249 24.5-31.249 12.25z" fill="#efefef" /> </g> <g id="effect"> <g> <path d="m7.783 2.727h2v1h-2z" fill="#a4afc1" transform="matrix(.707 -.707 .707 .707 .291 7.156)" /> </g> <g> <path d="m3.717 6.793h2v1h-2z" fill="#a4afc1" transform="matrix(.707 -.707 .707 .707 -3.775 5.471)" /> </g> <g> <path d="m4.217 2.05h1v2h-1z" fill="#a4afc1" transform="matrix(.707 -.707 .707 .707 -.775 4.229)" /> </g> <path d="m31.378 22.25c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zm0-2c-.275 0-.5.224-.5.5s.225.5.5.5.5-.224.5-.5-.225-.5-.5-.5z" fill="#a4afc1" /> </g> <g id="color"> <path d="m19.53 16.75h-11.28v3.5 7h3.5 3.48 7.52v-6.95-3.55z" fill="#f3f3f1" /> <path d="m25.25 20.3h-2.5v6.95h1 3.479 2.021v-2.95c0-2.209-1.791-4-4-4z" fill="#2fdf84" /> <circle cx="13.5" cy="27.5" fill="#f3f3f1" r="1.75" /> <circle cx="25.5" cy="27.5" fill="#f3f3f1" r="1.75" /> <circle cx="12.5" cy="12.5" fill="#2fdf84" r="5.75" /> </g> <g id="shadow"> <path d="m10.5 16.75h-2.25v3.5 7h2.25v-7z" fill="#d5dbe1" /> <path d="m22.75 20.3v6.95h1 1.25v-6.95z" fill="#00b871" /> <path d="m14 27.5c0-.536.246-1.009.625-1.33-.305-.258-.694-.42-1.125-.42-.966 0-1.75.784-1.75 1.75s.784 1.75 1.75 1.75c.431 0 .82-.162 1.125-.42-.379-.321-.625-.794-.625-1.33z" fill="#d5dbe1" /> <path d="m26 27.5c0-.536.246-1.009.625-1.33-.305-.258-.694-.42-1.125-.42-.966 0-1.75.784-1.75 1.75s.784 1.75 1.75 1.75c.431 0 .82-.162 1.125-.42-.379-.321-.625-.794-.625-1.33z" fill="#d5dbe1" /> <path d="m9 12.5c0-2.79 1.988-5.115 4.625-5.638-.364-.073-.74-.112-1.125-.112-3.176 0-5.75 2.574-5.75 5.75s2.574 5.75 5.75 5.75c.385 0 .761-.039 1.125-.112-2.637-.523-4.625-2.848-4.625-5.638z" fill="#00b871" /> </g> <g id="reg"> <path d="m12.5 28h-4.25c-.414 0-.75-.336-.75-.75v-7.86h1.5v7.11h3.5z" /> <path d="m22.75 28h-8.27v-1.5h7.52v-9h-2.61v-1.5h3.36c.414 0 .75.336.75.75v10.5c0 .414-.336.75-.75.75z" /> <path d="m29.25 28h-2.771v-1.5h2.021v-2.2c0-1.792-1.458-3.25-3.25-3.25h-1.75v5.45h1v1.5h-1.75c-.414 0-.75-.336-.75-.75v-6.95c0-.414.336-.75.75-.75h2.5c2.619 0 4.75 2.131 4.75 4.75v2.95c0 .414-.336.75-.75.75z" /> <path d="m13.5 30c-1.379 0-2.5-1.122-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.122 2.5 2.5-1.121 2.5-2.5 2.5zm0-3.5c-.552 0-1 .449-1 1s.448 1 1 1 1-.449 1-1-.448-1-1-1z" /> <path d="m25.5 30c-1.379 0-2.5-1.122-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.122 2.5 2.5-1.121 2.5-2.5 2.5zm0-3.5c-.552 0-1 .449-1 1s.448 1 1 1 1-.449 1-1-.448-1-1-1z" /> <path d="m12.5 19c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5 6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5zm0-11.5c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" /> <path d="m12 15h-2.75c-.414 0-.75-.336-.75-.75v-1c0-.965.785-1.75 1.75-1.75.138 0 .25-.112.25-.25s-.112-.25-.25-.25h-1.75v-1.5h1.75c.965 0 1.75.785 1.75 1.75s-.785 1.75-1.75 1.75c-.138 0-.25.112-.25.25v.25h2z" /> <path d="m14.5 9.5h1.5v5.5h-1.5z" /> <path d="m16 13h-1.75c-.965 0-1.75-.785-1.75-1.75v-1.75h1.5v1.75c0 .138.112.25.25.25h1.75z" /> </g> </svg> </td>
+                    <!--<td>
+                    <svg id="_x31__x2C_5" height="512" viewBox="0 0 36 36" width="512" xmlns="http://www.w3.org/2000/svg"> <path d="m4.167 8.377c0 6.917-3.583 11.667-3.583 15s1.916 10.333 17.249 10.333 17.583-9.417 17.583-13.083c.001-17.167-31.249-24.5-31.249-12.25z" fill="#efefef" /> <g fill="#a4afc1"> <path d="m5.033 2.467h2v1h-2z" transform="matrix(.707 -.707 .707 .707 -.331 5.135)" /> <path d="m.967 6.533h2v1h-2z" transform="matrix(.707 -.707 .707 .707 -4.397 3.451)" /> <path d="m1.644 1.967h1v2h-1z" transform="matrix(.707 -.707 .707 .707 -1.47 2.385)" /> </g> <path d="m13.35 14.75-2.346 1.875c-1.425 1.139-2.254 2.863-2.254 4.687v7.938h8.5v-1.997c1.381 0 2.5-1.119 2.5-2.5v-10.003z" fill="#f3f3f1" /> <path d="m13.75 18.156v-9.406c0-1.105.895-2 2-2h1.75l.106.212c.548 1.096 1.669 1.788 2.894 1.788 1.226 0 2.347-.693 2.895-1.789l.105-.211h1.75c1.105 0 2 .895 2 2v13.5c0 1.105-.895 2-2 2h-1.75l-.106-.211c-.548-1.096-1.669-1.789-2.894-1.789-1.226 0-2.346.693-2.894 1.789l-.106.211h-1.75c-1.105 0-2-.895-2-2z" fill="#2fdf84" /> <path d="m11.75 20.25 5.367-4.954c.197-.182.503-.176.693.014.933.933.933 2.447 0 3.38l-1.81 1.81c.607 1.215.438 2.674-.431 3.718l-.819 1.032z" fill="#f3f3f1" /> <path d="m13.254 16.625 2.346-1.875h-2.25l-2.346 1.875c-1.425 1.139-2.254 2.863-2.254 4.687v7.938h2.25v-7.938c0-1.824.829-3.548 2.254-4.687z" fill="#d5dbe1" /> <path d="m16 16.327v-7.577c0-.942.653-1.727 1.53-1.939l-.03-.061h-1.75c-1.105 0-2 .895-2 2v9.406.248z" fill="#00b871" /> <path d="m25.25 25h-1.75c-.284 0-.544-.161-.671-.415l-.105-.211c-.424-.848-1.276-1.374-2.224-1.374s-1.8.527-2.224 1.375l-.105.211c-.127.253-.387.414-.671.414h-1.75c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.294c.71-1.239 2.014-2 3.456-2s2.747.761 3.457 2h1.293c.689 0 1.25-.561 1.25-1.25v-13.5c0-.689-.561-1.25-1.25-1.25h-1.294c-.709 1.239-2.013 2-3.456 2s-2.747-.761-3.457-2h-1.293c-.689 0-1.25.561-1.25 1.25v9.406c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-9.406c0-1.517 1.233-2.75 2.75-2.75h1.75c.284 0 .543.16.67.414l.106.211c.424.849 1.276 1.375 2.224 1.375s1.8-.527 2.224-1.375l.106-.211c.127-.254.386-.414.67-.414h1.75c1.517 0 2.75 1.233 2.75 2.75v13.5c0 1.517-1.233 2.75-2.75 2.75z" /> <path d="m13.25 11.5h3.5v1.5h-3.5z" /> <path d="m18.25 11.5h4.5v1.5h-4.5z" /> <path d="m24.25 11.5h3.5v1.5h-3.5z" /> <path d="m14.872 26.304-1.175-.932 1.284-1.62c.69-.829.823-1.968.349-2.917-.145-.289-.088-.638.141-.866l1.81-1.81c.582-.582.634-1.496.157-2.138l-5.729 5.288-1.017-1.102 5.918-5.463c.494-.458 1.256-.442 1.732.035.593.593.919 1.381.919 2.22s-.327 1.627-.919 2.22l-1.455 1.455c.469 1.365.2 2.894-.741 4.022z" /> <path d="m17.25 30h-8.5c-.414 0-.75-.336-.75-.75v-7.938c0-2.063.924-3.984 2.536-5.273l2.346-1.875c.324-.258.797-.205 1.054.118.258.324.206.795-.118 1.054l-2.346 1.875c-1.253 1.002-1.972 2.497-1.972 4.101v7.188h7v-1.248c0-.414.336-.75.75-.75.965 0 1.75-.785 1.75-1.75v-2.002c0-.414.336-.75.75-.75s.75.336.75.75v2.002c0 1.534-1.068 2.823-2.5 3.163v1.335c0 .414-.336.75-.75.75z" /> </svg>
+                    </td>-->
+                    <!--<td><svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m37.5 22.5-15 15v467h30v-467z" fill="#ccc"/><path d="m474.5 157.5-70 150 70 150h30v-300z" fill="#405acc"/><path d="m286 157.5 96.5 200v100h92v-300z" fill="#4271db"/><path d="m382.5 97.5h-30l15 330h45v-300c0-16.5-13.5-30-30-30z" fill="#405acc"/><path d="m352.5 97.5h-270v300h270l30 30v-300c0-16.5-13.5-30-30-30z" fill="#4271db"/><path d="m382.5 397.5h-30v30c0 16.569 13.431 30 30 30s30-13.431 30-30-13.431-30-30-30z" fill="#3f43bd"/><path d="m52.5 7.5h-30v30h30c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ff9a42"/><g fill="#ffba48"><circle cx="22.5" cy="22.5" r="15"/><circle cx="247.5" cy="142.5" r="7.5"/><circle cx="195" cy="156.567" r="7.5"/><circle cx="156.567" cy="195" r="7.5"/><circle cx="142.5" cy="247.5" r="7.5"/><circle cx="156.567" cy="300" r="7.5"/><circle cx="195" cy="338.433" r="7.5"/><circle cx="247.5" cy="352.5" r="7.5"/><circle cx="300" cy="338.433" r="7.5"/><circle cx="338.433" cy="300" r="7.5"/><circle cx="352.5" cy="247.5" r="7.5"/><circle cx="338.433" cy="195" r="7.5"/><circle cx="300" cy="156.567" r="7.5"/></g><path d="m504.5 150h-62c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h54.5v285h-84.52c4.719-6.272 7.52-14.064 7.52-22.5v-300c0-20.678-16.822-37.5-37.5-37.5h-293.255c-2.99-14.672-14.573-26.255-29.245-29.245v-17.045c8.729-3.096 15-11.432 15-21.21 0-12.407-10.093-22.5-22.5-22.5h-30c-12.407 0-22.5 10.093-22.5 22.5 0 9.778 6.271 18.114 15 21.21v460.79c0 4.142 3.358 7.5 7.5 7.5h30c4.142 0 7.5-3.358 7.5-7.5v-70.255c14.672-2.99 26.255-14.573 29.245-29.245h255.755v22.5c0 20.678 16.822 37.5 37.5 37.5h122c4.142 0 7.5-3.358 7.5-7.5v-300c0-4.142-3.358-7.5-7.5-7.5zm-482-135h30c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-30c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5zm7.5 482v-452h15v452zm45-99.5c0 9.778-6.271 18.114-15 21.21v-342.42c8.729 3.096 15 11.432 15 21.21zm15-7.5v-285h292.5c12.407 0 22.5 10.093 22.5 22.5v270.021c-6.272-4.719-14.064-7.521-22.5-7.521zm270 37.5v-22.5h22.5c12.407 0 22.5 10.093 22.5 22.5s-10.093 22.5-22.5 22.5-22.5-10.093-22.5-22.5z"/></g></svg></td>-->
+                    <td>
+                    	<svg id="LINE" enable-background="new 0 0 36 36" height="512" viewBox="0 0 36 36" width="512" xmlns="http://www.w3.org/2000/svg"> <g> <path d="m34.904 20.355c-3.782-5.791-3.38-11.727-5.203-14.518s-7.256-7.603-20.093.782-9.572 17.5-7.566 20.569c9.388 14.372 39.561 3.423 32.862-6.833z" fill="#efefef" /> </g> <g> <path d="m29.245 9.233h1v2h-1z" fill="#a4afc1" transform="matrix(.707 -.707 .707 .707 1.477 24.03)" /> </g> <g> <path d="m25.179 5.166h1v2h-1z" fill="#a4afc1" transform="matrix(.707 -.707 .707 .707 3.156 19.956)" /> </g> <g> <path d="m28.922 5.667h2v1h-2z" fill="#a4afc1" transform="matrix(.707 -.707 .707 .707 4.404 22.964)" /> </g> <g> <path d="m6.418 9.81c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.672 1.5-1.5 1.5zm0-2c-.276 0-.5.225-.5.5s.224.5.5.5.5-.225.5-.5-.224-.5-.5-.5z" fill="#a4afc1" /> </g> <g> <path d="m26.25 18.75v8.591c0 1.054-.448 1.909-1 1.909h-7.25-7.25c-.552 0-1-.855-1-1.909v-8.591z" fill="#2fdf84" /> </g> <g> <path d="m18 15.268 5.25-5.665-2.199-2.835h-6.102l-2.199 2.835z" fill="#2fdf84" /> </g> <g> <path d="m11.75 27.341v-8.591h-2v8.591c0 1.054.448 1.909 1 1.909h2c-.552 0-1-.855-1-1.909z" fill="#00b871" /> </g> <g> <path d="m29.25 23.75h-7.684c-.351 0-.677-.184-.857-.486l-2.709-4.514h8.25z" fill="#f3f3f1" /> </g> <g> <path d="m6.75 23.75h7.684c.351 0 .677-.184.857-.486l2.709-4.514h-8.25z" fill="#f3f3f1" /> </g> <g> <path d="m14.75 9.603 2.199-2.835h-2l-2.199 2.835 5.25 5.665 1-1.079z" fill="#00b871" /> </g> <g> <path d="m9.75 18.75-3 5h2l3-5z" fill="#d5dbe1" /> </g> <g> <path d="m22.709 23.264-2.709-4.514h-2l2.709 4.514c.181.301.506.486.857.486h2c-.351 0-.677-.184-.857-.486z" fill="#d5dbe1" /> </g> <g> <path d="m9.75 18h16.5v1.5h-16.5z" /> </g> <g> <path d="m20.783 30h-10.033c-.965 0-1.75-.785-1.75-1.75v-4.5h1.5v4.5c0 .138.112.25.25.25h10.033z" /> </g> <g> <path d="m25.25 30h-2.461v-1.5h2.461c.138 0 .25-.112.25-.25v-4.5h1.5v4.5c0 .965-.785 1.75-1.75 1.75z" /> </g> <g> <path d="m17.25 18.75h1.5v10.5h-1.5z" /> </g> <g> <path d="m29.25 24.5h-7.684c-.61 0-1.185-.325-1.5-.849l-2.709-4.516c-.139-.231-.143-.521-.01-.755s.383-.38.653-.38h8.25c.264 0 .508.139.643.364l3 5c.139.231.143.521.01.755-.133.235-.383.381-.653.381zm-9.925-5 2.027 3.379c.044.074.127.121.214.121h6.359l-2.1-3.5z" /> </g> <g> <path d="m14.434 24.5h-7.684c-.27 0-.52-.146-.653-.381-.133-.234-.129-.523.01-.755l3-5c.135-.225.379-.364.643-.364h8.25c.27 0 .52.146.653.381.133.234.129.523-.01.755l-2.708 4.515c-.316.524-.891.849-1.501.849zm-6.359-1.5h6.359c.087 0 .17-.047.215-.122l2.026-3.378h-6.5z" /> </g> <g> <path d="m18 16.018c-.209 0-.408-.087-.55-.24l-5.25-5.665c-.25-.27-.267-.68-.042-.97l2.199-2.835c.142-.183.361-.29.593-.29h6.103c.232 0 .451.107.593.29l2.199 2.835c.225.29.207.7-.042.97l-5.25 5.665c-.145.153-.344.24-.553.24zm-4.268-6.458 4.268 4.604 4.268-4.604-1.584-2.042h-5.367z" /> </g> <g> <path d="m12.75 8.853h10.5v1.5h-10.5z" /> </g> <g> <path d="m17.25 6.768h1.5v8.5h-1.5z" /> </g> </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Achiziție 100% sigură</td>
+                    <td>Satisfacție 100% garantată</td>
+                    <td>Livrare expres gratuită</td>
+                    <!--<td>Posibilitatea plății cu numerar la livrare (+LEI)</td>-->
+                    <!--<td>Vânzător din UE</td>-->
+                    <!--<td>Cea mai bună alegere</td>-->
+                    <!--<td>Plăți electronice fără comisioane</td>-->
+                    <td>Calitate verificată a produsului</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <style>
+        #guarantee_icons_template {
+            /*background-color: #EEF0F4;*/
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #guarantee_icons_template svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        #guarantee_icons_template tr:nth-child(odd) td {
+            background-color: white;
+        }
+
+        #guarantee_icons_template tr:nth-child(even) td {
+            background-color: white;
+        }
+
+        #guarantee_icons_template td {
+            text-align: center;
+            border: 0;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            text-shadow: none;
+            color: black;
+            width: 25%;
+        }
+
+        #guarantee_icons_template tr:hover td {
+            border: 0;
+            color: initial;
+            background: white;
+        }
+
+        #guarantee_icons_template table {
+            border: 0;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 980px) {
+            #guarantee_icons_template td {
+                font-size: 10px;
+                font-weight: 300;
+                padding: 0px;
+            }
+        }
+    </style>
+    <script>
+        $(".badges_wrap").parent().hide();
+        $($(".new_guarantee_wrapper").html()).insertAfter(".intro");
+    </script>
+
+
+
+
+
+
+<style>
+	video[src$=".mp4"] {
+		max-height: 650px;
+		float: right;
+		max-width: max-content;
+	}
+
+	.img_max {
+		max-height: 650px;
+		float: right;
+	}
+
+	@media only screen and (max-width: 980px) {
+		.img_max {
+			float: unset;
+		}
+
+		video[src$=".mp4"] {
+			float: unset;
+		}
+	}
+</style>
+
+	<script>
+		gtag('event', 'view_item', {
+			'value': 135,
+			'items': [
+				 {
+						'id': 'avmil',
+						'google_business_vertical': 'retail'
+					},
+							]
+		});
+	</script>
+
+<script>
+    !function(a){"use strict";var b="starRating",c=function(){},d={totalStars:5,useFullStars:!1,starShape:"straight",emptyColor:"lightgray",hoverColor:"orange",activeColor:"gold",ratedColor:"crimson",useGradient:!0,readOnly:!1,disableAfterRate:!0,baseUrl:!1,starGradient:{start:"#FEF7CD",end:"#FF9511"},strokeWidth:4,strokeColor:"black",initialRating:0,starSize:40,callback:c,onHover:c,onLeave:c},e=function(c,e){var f,g,h;this.element=c,this.$el=a(c),this.settings=a.extend({},d,e),f=this.$el.data("rating")||this.settings.initialRating,h=this.settings.forceRoundUp?Math.ceil:Math.round,g=(h(2*f)/2).toFixed(1),this._state={rating:g},this._uid=Math.floor(999*Math.random()),e.starGradient||this.settings.useGradient||(this.settings.starGradient.start=this.settings.starGradient.end=this.settings.activeColor),this._defaults=d,this._name=b,this.init()},f={init:function(){this.renderMarkup(),this.addListeners(),this.initRating()},addListeners:function(){this.settings.readOnly||(this.$stars.on("mouseover",this.hoverRating.bind(this)),this.$stars.on("mouseout",this.restoreState.bind(this)),this.$stars.on("click",this.handleRating.bind(this)))},hoverRating:function(a){var b=this.getIndex(a);this.paintStars(b,"hovered"),this.settings.onHover(b+1,this._state.rating,this.$el)},handleRating:function(a){var b=this.getIndex(a),c=b+1;this.applyRating(c,this.$el),this.executeCallback(c,this.$el),this.settings.disableAfterRate&&this.$stars.off()},applyRating:function(a){var b=a-1;this.paintStars(b,"rated"),this._state.rating=b+1,this._state.rated=!0},restoreState:function(a){var b=this.getIndex(a),c=this._state.rating||-1,d=this._state.rated?"rated":"active";this.paintStars(c-1,d),this.settings.onLeave(b+1,this._state.rating,this.$el)},getIndex:function(b){var c=a(b.currentTarget),d=c.width(),e=a(b.target).attr("data-side"),f=this.settings.minRating;e=e?e:this.getOffsetByPixel(b,c,d),e=this.settings.useFullStars?"right":e;var g=c.index()-("left"===e?.5:0);return g=.5>g&&b.offsetX<d/4?-1:g,g=f&&f<=this.settings.totalStars&&f>g?f-1:g},getOffsetByPixel:function(a,b,c){var d=a.pageX-b.offset().left;return c/2>=d&&!this.settings.useFullStars?"left":"right"},initRating:function(){this.paintStars(this._state.rating-1,"active")},paintStars:function(b,c){var d,e,f,g;a.each(this.$stars,function(h,i){d=a(i).find('[data-side="left"]'),e=a(i).find('[data-side="right"]'),f=g=b>=h?c:"empty",f=h-b===.5?c:f,d.attr("class","svg-"+f+"-"+this._uid),e.attr("class","svg-"+g+"-"+this._uid)}.bind(this))},renderMarkup:function(){for(var a=this.settings,b=a.baseUrl?location.href.split("#")[0]:"",c='<div class="jq-star" style="width:'+a.starSize+"px;  height:"+a.starSize+'px;"><svg version="1.0" class="jq-star-svg" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg" '+this.getSvgDimensions(a.starShape)+" stroke-width:"+a.strokeWidth+'px;" xml:space="preserve"><style type="text/css">.svg-empty-'+this._uid+"{fill:url("+b+"#"+this._uid+"_SVGID_1_);}.svg-hovered-"+this._uid+"{fill:url("+b+"#"+this._uid+"_SVGID_2_);}.svg-active-"+this._uid+"{fill:url("+b+"#"+this._uid+"_SVGID_3_);}.svg-rated-"+this._uid+"{fill:"+a.ratedColor+";}</style>"+this.getLinearGradient(this._uid+"_SVGID_1_",a.emptyColor,a.emptyColor,a.starShape)+this.getLinearGradient(this._uid+"_SVGID_2_",a.hoverColor,a.hoverColor,a.starShape)+this.getLinearGradient(this._uid+"_SVGID_3_",a.starGradient.start,a.starGradient.end,a.starShape)+this.getVectorPath(this._uid,{starShape:a.starShape,strokeWidth:a.strokeWidth,strokeColor:a.strokeColor})+"</svg></div>",d="",e=0;e<a.totalStars;e++)d+=c;this.$el.append(d),this.$stars=this.$el.find(".jq-star")},getVectorPath:function(a,b){return"rounded"===b.starShape?this.getRoundedVectorPath(a,b):this.getSpikeVectorPath(a,b)},getSpikeVectorPath:function(a,b){return'<polygon data-side="center" class="svg-empty-'+a+'" points="281.1,129.8 364,55.7 255.5,46.8 214,-59 172.5,46.8 64,55.4 146.8,129.7 121.1,241 212.9,181.1 213.9,181 306.5,241 " style="fill: transparent; stroke: '+b.strokeColor+';" /><polygon data-side="left" class="svg-empty-'+a+'" points="281.1,129.8 364,55.7 255.5,46.8 214,-59 172.5,46.8 64,55.4 146.8,129.7 121.1,241 213.9,181.1 213.9,181 306.5,241 " style="stroke-opacity: 0;" /><polygon data-side="right" class="svg-empty-'+a+'" points="364,55.7 255.5,46.8 214,-59 213.9,181 306.5,241 281.1,129.8 " style="stroke-opacity: 0;" />'},getRoundedVectorPath:function(a,b){var c="M520.9,336.5c-3.8-11.8-14.2-20.5-26.5-22.2l-140.9-20.5l-63-127.7 c-5.5-11.2-16.8-18.2-29.3-18.2c-12.5,0-23.8,7-29.3,18.2l-63,127.7L28,314.2C15.7,316,5.4,324.7,1.6,336.5S1,361.3,9.9,370 l102,99.4l-24,140.3c-2.1,12.3,2.9,24.6,13,32c5.7,4.2,12.4,6.2,19.2,6.2c5.2,0,10.5-1.2,15.2-3.8l126-66.3l126,66.2 c4.8,2.6,10,3.8,15.2,3.8c6.8,0,13.5-2.1,19.2-6.2c10.1-7.3,15.1-19.7,13-32l-24-140.3l102-99.4 C521.6,361.3,524.8,348.3,520.9,336.5z";return'<path data-side="center" class="svg-empty-'+a+'" d="'+c+'" style="stroke: '+b.strokeColor+'; fill: transparent; " /><path data-side="right" class="svg-empty-'+a+'" d="'+c+'" style="stroke-opacity: 0;" /><path data-side="left" class="svg-empty-'+a+'" d="M121,648c-7.3,0-14.1-2.2-19.8-6.4c-10.4-7.6-15.6-20.3-13.4-33l24-139.9l-101.6-99 c-9.1-8.9-12.4-22.4-8.6-34.5c3.9-12.1,14.6-21.1,27.2-23l140.4-20.4L232,164.6c5.7-11.6,17.3-18.8,30.2-16.8c0.6,0,1,0.4,1,1 v430.1c0,0.4-0.2,0.7-0.5,0.9l-126,66.3C132,646.6,126.6,648,121,648z" style="stroke: '+b.strokeColor+'; stroke-opacity: 0;" />'},getSvgDimensions:function(a){return"rounded"===a?'width="550px" height="500.2px" viewBox="0 146.8 550 500.2" style="enable-background:new 0 0 550 500.2;':'x="0px" y="0px" width="305px" height="305px" viewBox="60 -62 309 309" style="enable-background:new 64 -59 305 305;'},getLinearGradient:function(a,b,c,d){var e="rounded"===d?500:250;return'<linearGradient id="'+a+'" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="'+e+'"><stop  offset="0" style="stop-color:'+b+'"/><stop  offset="1" style="stop-color:'+c+'"/> </linearGradient>'},executeCallback:function(a,b){var c=this.settings.callback;c(a,b)}},g={unload:function(){var c="plugin_"+b,d=a(this),e=d.data(c).$stars;e.off(),d.removeData(c).remove()},setRating:function(c,d){var e="plugin_"+b,f=a(this),g=f.data(e);c>g.settings.totalStars||0>c||(d&&(c=Math.round(c)),g.applyRating(c))},getRating:function(){var c="plugin_"+b,d=a(this),e=d.data(c);return e._state.rating},resize:function(c){var d="plugin_"+b,e=a(this),f=e.data(d),g=f.$stars;return 1>=c||c>200?void console.log("star size out of bounds"):(g=Array.prototype.slice.call(g),void g.forEach(function(b){a(b).css({width:c+"px",height:c+"px"})}))},setReadOnly:function(c){var d="plugin_"+b,e=a(this),f=e.data(d);c===!0?f.$stars.off("mouseover mouseout click"):(f.settings.readOnly=!1,f.addListeners())}};a.extend(e.prototype,f),a.fn[b]=function(c){if(!a.isPlainObject(c)){if(g.hasOwnProperty(c))return g[c].apply(this,Array.prototype.slice.call(arguments,1));a.error("Method "+c+" does not exist on "+b+".js")}return this.each(function(){a.data(this,"plugin_"+b)||a.data(this,"plugin_"+b,new e(this,c))})}}(jQuery,window,document);
+</script>
+
+<style>
+    .jq-stars {
+      display: inline-block;
+    }
+
+    .jq-rating-label {
+      font-size: 22px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      font-family: helvetica, arial, verdana;
+    }
+
+    .jq-star {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .jq-star-svg {
+      padding-left: 3px;
+      width: 100%;
+      height: 100% ;
+    }
+
+    .jq-star:hover .fs-star-svg path {
+    }
+
+    .jq-star-svg path {
+      /* stroke: #000; */
+      stroke-linejoin: round;
+    }
+
+    /* un-used */
+    .jq-shadow {
+      -webkit-filter: drop-shadow( -2px -2px 2px #888 );
+      filter: drop-shadow( -2px -2px 2px #888 );
+    }
+
+    .font_larger .rating_wrapper{
+        height: auto!important;
+        display: inline-block;
+    }
+
+    .em-padding{
+        padding-top: 0em;
+    }
+
+    .font_larger .rating_wrapper div{
+        display: inline-block;
+    }
+
+    .intro .rating_wrapper{
+        display: none;
+    }
+
+    .currently_section{
+        padding-top: 0px;
+        padding-bottom: 17px;
+        background-color: #EEF0F4;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .font_larger .color svg{
+        margin-right: 5px;
+        border-radius: 100%;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+        animation: pulse-white 2s infinite;
+    }
+
+    #floating_button{
+        display: none!important;
+    }
+
+    .carousel-cell{
+        color: #1f1f1f;
+    }
+
+
+
+
+    @media only screen and (max-width: 900px) {
+        .rating_wrapper{
+            height: auto!important;
+            padding-bottom: 10px;
+        }
+
+        .font_larger .rating_wrapper{
+            height: auto!important;
+        }
+
+        .font_larger .rating_wrapper span{
+            padding-left: 0px!important;
+        }
+
+        .rating_wrapper *{
+            float: none!important;
+        }
+
+        .font_larger .rating_wrapper{
+            padding-bottom: 10px;
+            display: none;
+        }
+
+
+        .intro .rating_wrapper{
+            display: block!important;
+        }
+
+        .em-padding{
+            padding-top: 1em;
+        }
+
+
+        .currently_section{
+            padding-bottom: 10px;
+        }
+
+        .currently-carousel *{
+            font-size: 12px!important;
+        }
+
+        .currently-carousel svg{
+            width: 24px!important;
+        }
+
+        .currently-carousel .carousel-cell{
+            margin-top: -10px;
+        }
+
+
+        .above-logo{
+            padding: 0px!important;
+            padding-top: 4px!important;
+        }
+
+        .above-logo img{
+            height: 25px!important;
+        }
+
+        .mycounter {
+            margin-top: 0px;
+            transform: scale(0.75);
+        }
+
+        .mycounter__wrap{
+            padding-bottom: 15px;
+        }
+
+        h1{
+            padding-top: 20px;
+        }
+
+        .intro .wrap{
+            padding-top: 20px
+        }
+
+        #floating_button{
+            position: fixed;
+            display: block!important;
+            bottom: 0px;
+            height: 33px;
+            width: 100%;
+            margin-left: -23px;
+            text-align: center;
+            z-index: 10000;
+            font-size: 24px;
+            border-radius: 0px;
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+            animation: pulse-white2 4s infinite;
+        }
+
+
+        #wo_notification {
+            top: 0px;
+            bottom: unset;
+        }
+
+
+        body{
+            padding-bottom: 40px;
+        }
+
+
+        .color_override{
+            color: #56627a;
+            font-family: 'BebasNeueBold', sans-serif;
+            font-size: 22px;
+        }
+
+    }
+
+
+
+
+
+
+
+
+    @keyframes pulse-white {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+        }
+
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+        }
+
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+        }
+    }
+
+    @keyframes pulse-white2 {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        }
+
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+        }
+    }
+
+
+
+
+
+
+</style>
+
+
+
+
+<script>
+
+    var rating_html = '<div style="height: 2px; padding-top: 5px;" class="rating_wrapper"><span style="float: right; padding-left: 12px; padding-top: 5px; font-weight: 700;"><span class="rating_count">1996</span> de recenzii</span> <div style="float: right;" class="my-rating"></div></div>';
+
+    // INSERT RATINGS
+    $(rating_html).insertBefore($(".assistance").parent());
+    $('<div class="section currently_section"><div class="currently-carousel"></div></div>').insertAfter(".intro");
+
+    $("<br>" + rating_html).insertAfter($("em"));
+
+    $(".my-rating").starRating({
+        starSize: 25,
+        initialRating: 4.5,
+        starShape: 'straight',
+        strokeWidth: 0,
+        useGradient: false,
+        activeColor: '#FFD700',
+        hoverColor: '#FFD700',
+        ratedColor: '#FFD700',
+        callback: function(currentRating, $el){
+            var ratings = parseInt($(".rating_count").first().text());
+            ratings++;
+            console.log(ratings);
+            $(".rating_count").text(ratings);
+            $($el).starRating('setRating', 4.5);
+        }
+    });
+
+
+
+    // INSERT SLIDING INFO
+    $('.currently-carousel').append('<div class="carousel-cell"><svg style="width: 40px; height: 40px; margin-right: 17px; position: relative; bottom: -10px;" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m250.618 194.941h-153.36v-189.016c0-3.162 2.564-5.726 5.726-5.726h141.907c3.162 0 5.726 2.564 5.726 5.726v189.016z" fill="#eab14d"/><path d="m232.884.198v194.742h17.733v-189.015c0-3.162-2.564-5.726-5.726-5.726h-12.007z" fill="#e49542"/><path d="m183.635 44.319h-19.393c-2.547 0-4.611-2.064-4.611-4.611v-39.51h28.615v39.51c0 2.547-2.065 4.611-4.611 4.611z" fill="#df6b57"/><path d="m426.69 363.673h-235.019v-231.908c0-4.936 4.001-8.937 8.937-8.937h220.356c3.162 0 5.726 2.564 5.726 5.726z" fill="#f1cb86"/><path d="m408.957 122.828v240.845h17.733v-235.119c0-3.162-2.564-5.726-5.726-5.726z" fill="#ecbe6b"/><path d="m318.877 166.949h-19.393c-2.547 0-4.611-2.064-4.611-4.611v-39.51h28.615v39.51c0 2.547-2.064 4.611-4.611 4.611z" fill="#365e7d"/><path d="m276.981 511.802h-269.659c-4.044 0-7.322-3.278-7.322-7.322v-176.288c0-3.163 2.564-5.726 5.726-5.726h265.167c3.362 0 6.088 2.726 6.088 6.088z" fill="#eab14d"/><path d="m259.248 322.466v189.336h17.733v-183.248c0-3.362-2.726-6.088-6.088-6.088z" fill="#e49542"/><path d="m148.187 366.587h-19.393c-2.547 0-4.611-2.064-4.611-4.611v-39.51h28.615v39.51c0 2.547-2.064 4.611-4.611 4.611z" fill="#365e7d"/><path d="m504.678 511.802h-227.697v-148.129h229.293c3.162 0 5.726 2.564 5.726 5.726v135.08c0 4.044-3.278 7.323-7.322 7.323z" fill="#eab14d"/><path d="m494.267 363.673v148.129h10.411c4.044 0 7.322-3.278 7.322-7.322v-135.08c0-3.163-2.564-5.726-5.726-5.726h-12.007z" fill="#e49542"/><path d="m404.187 407.794h-19.393c-2.547 0-4.611-2.064-4.611-4.611v-39.51h28.615v39.51c0 2.547-2.064 4.611-4.611 4.611z" fill="#df6b57"/><path d="m191.671 322.466h-153.359v-121.799c0-3.162 2.564-5.726 5.726-5.726h147.633z" fill="#f1cb86"/><path d="m173.938 194.941h17.733v127.525h-17.733z" fill="#ecbe6b"/><path d="m124.688 239.062h-19.393c-2.547 0-4.611-2.064-4.611-4.611v-39.51h28.615v39.51c0 2.547-2.064 4.611-4.611 4.611z" fill="#df6b57"/></g></svg><span id="sold_today">232</span> bucăți au fost vândute în ultimele 24 de ore!</div>');
+
+    $('.currently-carousel').append('<div class="carousel-cell"><svg id="Capa_1" style="width: 40px; height: 40px; margin-right: 17px; position: relative; bottom: -10px;" enable-background="new 0 0 512.016 512.016" height="512" viewBox="0 0 512.016 512.016" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m475.278 99.896-40.73-32.13 3.38-51.77c.41-6.2-2.84-11.28-7.48-13.95-4.63-2.68-10.66-2.94-15.82.5l-43.14 28.8-48.2-19.2c-11.53-4.6-23.35 6.05-19.99 18l14.07 49.93-33.16 39.9c-7.94 9.55-1.46 24.09 10.94 24.58l51.84 2.05 27.69 43.87c6.65 10.52 22.47 8.79 26.76-2.81l17.97-48.67 50.28-12.79c12.03-3.06 15.34-18.63 5.59-26.31z" fill="#fed843"/><path d="m146.008 422.016h-131c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h131c8.284 0 15-6.716 15-15v-60c0-8.284-6.716-15-15-15z" fill="#fed843"/><path d="m271.008 362.016h-125c-8.284 0-15 6.716-15 15v135h140c8.284 0 15-6.716 15-15v-120c0-8.284-6.716-15-15-15z" fill="#ffb64c"/><path d="m386.008 302.016h-115c-8.284 0-15 6.716-15 15v195h130c8.284 0 15-6.716 15-15v-180c0-8.284-6.716-15-15-15z" fill="#fed843"/><path d="m497.008 512.016h-126v-255c0-8.284 6.716-15 15-15h111c8.284 0 15 6.716 15 15v240c0 8.284-6.716 15-15 15z" fill="#ffb64c"/><path d="m76.008 332.016c-8.284 0-15-6.716-15-15 0-24.813 20.187-45 45-45h60c8.271 0 15-6.729 15-15 0-24.813 20.187-45 45-45h60c8.271 0 15-6.729 15-15 0-8.284 6.716-15 15-15s15 6.716 15 15c0 24.813-20.187 45-45 45h-60c-8.271 0-15 6.729-15 15 0 24.813-20.187 45-45 45h-60c-8.271 0-15 6.729-15 15 0 8.284-6.716 15-15 15z" fill="#efe2dd"/><path d="m469.688 126.206-50.28 12.79-17.97 48.67c-4.29 11.6-20.11 13.33-26.76 2.81l-27.69-43.87 83.46-144.56c4.64 2.67 7.89 7.75 7.48 13.95l-3.38 51.77 40.73 32.13c9.75 7.68 6.44 23.25-5.59 26.31z" fill="#ffb64c"/></g></svg>Momentan <span id="current_views">129</span> persoane vizualizează acest produs!</div>');
+
+    $('.currently-carousel').append('<div class="carousel-cell"><svg style="width: 40px; height: 40px; margin-right: 17px; position: relative; bottom: -10px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path style="fill:#FF8C78;" d="M395.738,167.413c-2.733-4.112-8.728-4.749-12.26-1.289l-36.666,35.887L263.369,4.783 c-2.622-6.195-11.637-6.43-14.572-0.367L132.114,245.56l-42.551-18.414c-3.926-1.7-8.496-0.009-10.371,3.837 c-15.414,31.627-23.231,58.872-23.231,80.978C55.961,422.263,145.699,512,256,512s200.039-89.738,200.039-200.039 C456.039,276.251,435.751,227.619,395.738,167.413z"/> <path style="fill:#DB6B5E;" d="M280.005,503.999c-110.302,0-200.039-89.738-200.039-200.039c0-20.13,6.503-44.533,19.302-72.613 l-9.704-4.199c-3.926-1.7-8.496-0.009-10.371,3.837c-15.415,31.626-23.232,58.87-23.232,80.977C55.961,422.263,145.699,512,256,512 c26.496,0,51.8-5.191,74.964-14.588C314.688,501.702,297.61,503.999,280.005,503.999z"/> <path style="fill:#FFC44F;" d="M262.583,139.38c-3.128-4.527-10.04-4.527-13.168,0c-4.632,6.705-113.439,164.96-113.439,228.592 c0,66.181,53.843,120.023,120.023,120.023s120.023-53.843,120.023-120.023C376.024,304.341,267.215,146.086,262.583,139.38z"/> <path style="fill:#F79F4D;" d="M272.003,479.994c-66.181,0-120.023-53.842-120.023-120.023c0-57.239,88.03-191.023,109.091-222.209 c-3.473-2.811-8.963-2.276-11.654,1.619c-4.633,6.705-113.44,164.96-113.44,228.592c0,66.181,53.843,120.023,120.023,120.023 c22.405,0,43.392-6.177,61.358-16.908C303.357,476.822,288.044,479.994,272.003,479.994z"/> <path style="fill:#8E959F;" d="M256,287.957c-48.532,0-88.017,39.485-88.017,88.017s39.485,88.017,88.017,88.017 s88.017-39.485,88.017-88.017S304.533,287.957,256,287.957z"/> <path style="fill:#ECEDEF;" d="M256,303.96c-39.709,0-72.014,32.305-72.014,72.014s32.305,72.014,72.014,72.014 s72.014-32.305,72.014-72.014S295.709,303.96,256,303.96z"/> <g> <path style="fill:#8E959F;" d="M256,287.957c-2.698,0-5.365,0.129-8.002,0.367v31.639c0,4.419,3.583,8.002,8.002,8.002 c4.419,0,8.002-3.583,8.002-8.002v-31.639C261.365,288.085,258.698,287.957,256,287.957z"/> <path style="fill:#8E959F;" d="M167.983,375.974c0,2.698,0.129,5.365,0.367,8.002h31.639c4.419,0,8.002-3.583,8.002-8.002 c0-4.419-3.583-8.002-8.002-8.002H168.35C168.112,370.608,167.983,373.275,167.983,375.974z"/> <path style="fill:#8E959F;" d="M256,463.991c2.698,0,5.365-0.129,8.002-0.367v-31.639c0-4.419-3.583-8.002-8.002-8.002 c-4.419,0-8.002,3.583-8.002,8.002v31.639C250.635,463.862,253.303,463.991,256,463.991z"/> <path style="fill:#8E959F;" d="M344.017,375.974c0-2.698-0.129-5.365-0.367-8.002h-31.639c-4.419,0-8.002,3.583-8.002,8.002 c0,4.419,3.583,8.002,8.002,8.002h31.639C343.888,381.339,344.017,378.671,344.017,375.974z"/> </g> <path style="fill:#DB6B5E;" d="M255.994,391.977c-1.528,0-3.072-0.437-4.433-1.344l-24.005-16.003 c-3.677-2.451-4.671-7.418-2.219-11.096c2.451-3.678,7.419-4.671,11.096-2.219l17.706,11.804l19.464-25.95 c2.651-3.536,7.667-4.253,11.202-1.6c3.536,2.652,4.252,7.667,1.6,11.202l-24.005,32.006 C260.835,390.865,258.433,391.977,255.994,391.977z"/> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Mai puțin de <span class="stock_left">19</span> bucăți au rămas în stoc!</div>');
+
+
+        $(".font_larger.color:has(#na_zalogi)").html('<div><svg style="width: 24px; height: 24px; margin-right: 5px; position: relative; bottom: -0px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path style="fill:#FF8C78;" d="M395.738,167.413c-2.733-4.112-8.728-4.749-12.26-1.289l-36.666,35.887L263.369,4.783 c-2.622-6.195-11.637-6.43-14.572-0.367L132.114,245.56l-42.551-18.414c-3.926-1.7-8.496-0.009-10.371,3.837 c-15.414,31.627-23.231,58.872-23.231,80.978C55.961,422.263,145.699,512,256,512s200.039-89.738,200.039-200.039 C456.039,276.251,435.751,227.619,395.738,167.413z"/> <path style="fill:#DB6B5E;" d="M280.005,503.999c-110.302,0-200.039-89.738-200.039-200.039c0-20.13,6.503-44.533,19.302-72.613 l-9.704-4.199c-3.926-1.7-8.496-0.009-10.371,3.837c-15.415,31.626-23.232,58.87-23.232,80.977C55.961,422.263,145.699,512,256,512 c26.496,0,51.8-5.191,74.964-14.588C314.688,501.702,297.61,503.999,280.005,503.999z"/> <path style="fill:#FFC44F;" d="M262.583,139.38c-3.128-4.527-10.04-4.527-13.168,0c-4.632,6.705-113.439,164.96-113.439,228.592 c0,66.181,53.843,120.023,120.023,120.023s120.023-53.843,120.023-120.023C376.024,304.341,267.215,146.086,262.583,139.38z"/> <path style="fill:#F79F4D;" d="M272.003,479.994c-66.181,0-120.023-53.842-120.023-120.023c0-57.239,88.03-191.023,109.091-222.209 c-3.473-2.811-8.963-2.276-11.654,1.619c-4.633,6.705-113.44,164.96-113.44,228.592c0,66.181,53.843,120.023,120.023,120.023 c22.405,0,43.392-6.177,61.358-16.908C303.357,476.822,288.044,479.994,272.003,479.994z"/> <path style="fill:#8E959F;" d="M256,287.957c-48.532,0-88.017,39.485-88.017,88.017s39.485,88.017,88.017,88.017 s88.017-39.485,88.017-88.017S304.533,287.957,256,287.957z"/> <path style="fill:#ECEDEF;" d="M256,303.96c-39.709,0-72.014,32.305-72.014,72.014s32.305,72.014,72.014,72.014 s72.014-32.305,72.014-72.014S295.709,303.96,256,303.96z"/> <g> <path style="fill:#8E959F;" d="M256,287.957c-2.698,0-5.365,0.129-8.002,0.367v31.639c0,4.419,3.583,8.002,8.002,8.002 c4.419,0,8.002-3.583,8.002-8.002v-31.639C261.365,288.085,258.698,287.957,256,287.957z"/> <path style="fill:#8E959F;" d="M167.983,375.974c0,2.698,0.129,5.365,0.367,8.002h31.639c4.419,0,8.002-3.583,8.002-8.002 c0-4.419-3.583-8.002-8.002-8.002H168.35C168.112,370.608,167.983,373.275,167.983,375.974z"/> <path style="fill:#8E959F;" d="M256,463.991c2.698,0,5.365-0.129,8.002-0.367v-31.639c0-4.419-3.583-8.002-8.002-8.002 c-4.419,0-8.002,3.583-8.002,8.002v31.639C250.635,463.862,253.303,463.991,256,463.991z"/> <path style="fill:#8E959F;" d="M344.017,375.974c0-2.698-0.129-5.365-0.367-8.002h-31.639c-4.419,0-8.002,3.583-8.002,8.002 c0,4.419,3.583,8.002,8.002,8.002h31.639C343.888,381.339,344.017,378.671,344.017,375.974z"/> </g> <path style="fill:#DB6B5E;" d="M255.994,391.977c-1.528,0-3.072-0.437-4.433-1.344l-24.005-16.003 c-3.677-2.451-4.671-7.418-2.219-11.096c2.451-3.678,7.419-4.671,11.096-2.219l17.706,11.804l19.464-25.95 c2.651-3.536,7.667-4.253,11.202-1.6c3.536,2.652,4.252,7.667,1.6,11.202l-24.005,32.006 C260.835,390.865,258.433,391.977,255.994,391.977z"/> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Au rămas doar <font color="#d10039"><span class="stock_left">19</span></font>  bucăți în stoc.<br> Stocul se va epuiza în mai puțin de 24 de ore!</div>');
+
+
+
+        var is_quantity = false;
+        var second_div = $(".font_larger font").last().text();
+        if($.isNumeric(second_div)){
+            $(".font_larger.color:has(font)").html('<div class="color_override"><svg style="width: 24px; height: 24px; margin-right: 5px; position: relative; bottom: -0px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path style="fill:#FF8C78;" d="M395.738,167.413c-2.733-4.112-8.728-4.749-12.26-1.289l-36.666,35.887L263.369,4.783 c-2.622-6.195-11.637-6.43-14.572-0.367L132.114,245.56l-42.551-18.414c-3.926-1.7-8.496-0.009-10.371,3.837 c-15.414,31.627-23.231,58.872-23.231,80.978C55.961,422.263,145.699,512,256,512s200.039-89.738,200.039-200.039 C456.039,276.251,435.751,227.619,395.738,167.413z"/> <path style="fill:#DB6B5E;" d="M280.005,503.999c-110.302,0-200.039-89.738-200.039-200.039c0-20.13,6.503-44.533,19.302-72.613 l-9.704-4.199c-3.926-1.7-8.496-0.009-10.371,3.837c-15.415,31.626-23.232,58.87-23.232,80.977C55.961,422.263,145.699,512,256,512 c26.496,0,51.8-5.191,74.964-14.588C314.688,501.702,297.61,503.999,280.005,503.999z"/> <path style="fill:#FFC44F;" d="M262.583,139.38c-3.128-4.527-10.04-4.527-13.168,0c-4.632,6.705-113.439,164.96-113.439,228.592 c0,66.181,53.843,120.023,120.023,120.023s120.023-53.843,120.023-120.023C376.024,304.341,267.215,146.086,262.583,139.38z"/> <path style="fill:#F79F4D;" d="M272.003,479.994c-66.181,0-120.023-53.842-120.023-120.023c0-57.239,88.03-191.023,109.091-222.209 c-3.473-2.811-8.963-2.276-11.654,1.619c-4.633,6.705-113.44,164.96-113.44,228.592c0,66.181,53.843,120.023,120.023,120.023 c22.405,0,43.392-6.177,61.358-16.908C303.357,476.822,288.044,479.994,272.003,479.994z"/> <path style="fill:#8E959F;" d="M256,287.957c-48.532,0-88.017,39.485-88.017,88.017s39.485,88.017,88.017,88.017 s88.017-39.485,88.017-88.017S304.533,287.957,256,287.957z"/> <path style="fill:#ECEDEF;" d="M256,303.96c-39.709,0-72.014,32.305-72.014,72.014s32.305,72.014,72.014,72.014 s72.014-32.305,72.014-72.014S295.709,303.96,256,303.96z"/> <g> <path style="fill:#8E959F;" d="M256,287.957c-2.698,0-5.365,0.129-8.002,0.367v31.639c0,4.419,3.583,8.002,8.002,8.002 c4.419,0,8.002-3.583,8.002-8.002v-31.639C261.365,288.085,258.698,287.957,256,287.957z"/> <path style="fill:#8E959F;" d="M167.983,375.974c0,2.698,0.129,5.365,0.367,8.002h31.639c4.419,0,8.002-3.583,8.002-8.002 c0-4.419-3.583-8.002-8.002-8.002H168.35C168.112,370.608,167.983,373.275,167.983,375.974z"/> <path style="fill:#8E959F;" d="M256,463.991c2.698,0,5.365-0.129,8.002-0.367v-31.639c0-4.419-3.583-8.002-8.002-8.002 c-4.419,0-8.002,3.583-8.002,8.002v31.639C250.635,463.862,253.303,463.991,256,463.991z"/> <path style="fill:#8E959F;" d="M344.017,375.974c0-2.698-0.129-5.365-0.367-8.002h-31.639c-4.419,0-8.002,3.583-8.002,8.002 c0,4.419,3.583,8.002,8.002,8.002h31.639C343.888,381.339,344.017,378.671,344.017,375.974z"/> </g> <path style="fill:#DB6B5E;" d="M255.994,391.977c-1.528,0-3.072-0.437-4.433-1.344l-24.005-16.003 c-3.677-2.451-4.671-7.418-2.219-11.096c2.451-3.678,7.419-4.671,11.096-2.219l17.706,11.804l19.464-25.95 c2.651-3.536,7.667-4.253,11.202-1.6c3.536,2.652,4.252,7.667,1.6,11.202l-24.005,32.006 C260.835,390.865,258.433,391.977,255.994,391.977z"/> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Au rămas doar <font color="#d10039"><span class="stock_left">19</span></font>  bucăți în stoc.<br> Stocul se va epuiza în mai puțin de 24 de ore!</div>');
+        }
+
+        $('.currently-carousel').flickity({
+            // options
+            cellAlign: 'center',
+            contain: true,
+            prevNextButtons: false,
+            pageDots: false,
+            autoPlay: 5500,
+            wrapAround: true
+        });
+
+
+        setInterval(update_numbers_stat,6500);
+
+
+        function update_numbers_stat(){
+            var sold_today = parseInt($("#sold_today").text());
+            var current_views = parseInt($("#current_views").text());
+            var stock_left = parseInt($(".stock_left").first().text());
+
+            if(stock_left > 7){
+                var r_s = Math.floor(Math.random() * 2) + 1;
+
+                if(stock_left <= 15){
+                    var r_p =  Math.floor((Math.random() * 2));
+                    if(r_p == 0){
+                        r_s = 0;
+                    }
+                }
+
+                if((stock_left - r_s) < 7){
+                    $(".stock_left").text(7);
+                } else {
+                    $(".stock_left").text(stock_left - r_s);
+                }
+
+                $("#sold_today").text(sold_today + r_s);
+            }
+
+            if(current_views < 450){
+                $("#current_views").text(parseInt(current_views + (0.03 * current_views)));
+            }
+
+        }
+
+
+
+        var floating_button = $("a[href='#order']").first().clone();
+        $(floating_button).attr("id", "floating_button");
+        $(floating_button).removeClass("jello");
+        $(floating_button).removeClass("jello_delay");
+
+        $("body").append($(floating_button));
+
+
+
+        var topofDiv = $(".quotes").offset().top; //gets offset of header
+        var height = $(".quotes").outerHeight(); //gets height of header
+
+
+        var topofDiv2 = $(".badges_wrap").offset().top; //gets offset of header
+        var height2 = $(".badges_wrap").outerHeight(); //gets height of header
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() > (topofDiv - height)){
+                if($(window).scrollTop() > (topofDiv2 - height2)){
+                    $("#floating_button").slideDown();
+                } else {
+                    $("#floating_button").slideUp();
+                }
+            } else {
+                $("#floating_button").slideDown();
+            }
+
+        });
+
+
+</script><input type="hidden" name="c_for_texts" value="RO">
+<script>
+    var country_for_text = $("input[name=c_for_texts]").val();
+    var texts = {
+        "SI": "Kartica/Paypal (brez provizije)",
+        "SK": "Kreditná karta/Paypal (Bez provízie)",
+        "BG": "Кредитна карта/PayPal (Без такси)",
+        "EN": "Credit card/Paypal (No comission)",
+        "IT": "Carta/Paypal (Senza commissione)",
+        "HU": "Bankkártya/PayPal (Jutalék mentes)",
+        "GR": "ΠΙΣΤΩΤΙΚΗ ΚΑΡΤΑ/PayPal (χωρίς προμήθεια)",
+        "HR": "Kreditna kartica/Paypal (bez naknade)",
+        "RO": "Card de credit/Paypal (fără comision)",
+        "PL": "Karta bankowa Przelewy24/Paypal (bez prowizji)",
+        "CZ": "KARTA/PAYPAL (bez provize)",
+    };
+
+    if(country_for_text != ""){
+
+        var data_text = texts[country_for_text];
+        $("label[for=braintree-radio]").attr("data-text", data_text);
+    }
+
+</script>
+
+
+<style>
+    .toggle-button--valo label {
+        width: 140px;
+        }
+    .toggle-button--valo label:before, .toggle-button--valo label:after {
+        width: 140px;
+        }
+
+    @media only screen and (max-width: 480px){
+        .toggle-button--valo{
+            width: 200px;
+        }
+
+        .toggle-button--valo label{
+            width: 200px;
+        }
+
+        .toggle-button--valo label:before, .toggle-button--valo label:after{
+            width: 200px;
+        }
+    }
+
+
+
+    b{
+        font-weight: bold!important;
+    }
+</style><script>
+	$("input[id=quantity]").attr("type", "number");
+	$("input[id=quantity]").attr("min", "1");
+	$("input[id=quantity]").attr("max", "2");
+	$("input[id=quantity]").change(function(){
+		var quantity = this.value;
+		if(quantity < 1){
+			$(this).val(1);
+		} else if(quantity > 2){
+			$(this).val(1);
+		}
+	});
+</script><script>
+    setTimeout(function(){
+        var r_minutes = Math.floor((Math.random() * 73) + 17);
+
+        var timer_date = new Date();
+        timer_date.setMinutes(timer_date.getMinutes() + r_minutes);
+
+        var r_year = timer_date.getFullYear();
+        var r_month = (timer_date.getMonth());
+        var r_day = (timer_date.getDate());
+        var r_hours = (timer_date.getHours());
+        var r_minutes = (timer_date.getMinutes());
+
+        var currentDate = new Date();
+        var futureDate  = new Date(r_year, r_month, r_day, r_hours, r_minutes);
+
+        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        clock = $('#vip').FlipClock(diff, {
+            countdown: true,
+            language: flipClock_language
+        });
+        clock1 = $('#vip__top').FlipClock(diff, {
+            countdown: true,
+            language: flipClock_language
+        });
+    }, 100);
+</script><script type="text/javascript" id="who-ordered" data-lang="RO" data-brand="Smania" src="https://s-mania.com/v1-includes/inc/who-ordered/orders.js?v=1606303622"></script>		<script type="text/javascript">
+			$(document).ready(function(){
+				// $("#order_form").append('<div style="text-align: center; margin: 20px;"><label id="pogoji_lbl"><input id="pogoji_check" type="checkbox"> Strinjam se z navedenimi Pogoji poslovanja.</label></div>');
+				$("#submit1").before($('<div style="text-align: center;width: 90%;clear: both;margin: 0 auto 20px auto;"><label id="pogoji_lbl"><input id="pogoji_check" type="checkbox"> Sunt de acord cu Termenii și Condițiile de Utilizare și Politica de Confidențialitate</label></div>'));
+
+				var d = new Date();
+				$('.footer .fancybox-tos').html('&copy;'+d.getFullYear()+' Termeni de utilizare');
+			});
+		</script>
+	<style>
+    .field-wrap {
+        float: left;
+        margin: 0 0 10px 6%;
+        width: 88% !important;
+    }
+
+    .field-wrap2 {
+        float: left;
+        margin: 0 0 10px 2.6%;
+        width: 30% !important;
+    }
+
+    .field-wrap3 {
+        float: left;
+        margin: 0 0 10px 6%;
+        width: 55% !important;
+    }
+</style><style>
+	.field-wrap4 {
+	    float: left;
+	    margin: 0 0 10px 2.6%;
+	    width: 13.8% !important;
+	}
+</style>
+
+<script>
+	var name_input = $("input[name=house_number]");
+	$('<div class="finput field-wrap3 field-wrap-mobile-full"><label for="delivery_info">Bloc</label><input type="text" maxlength="40" name="delivery_info" id="delivery_info" class="input-text"></div>').insertAfter($(name_input).parent());
+	$('<div class="finput field-wrap4 field-wrap-mobile-full"><label for="delivery_info_scara">Scara</label><input type="text" maxlength="40" name="delivery_info_scara" id="delivery_info_scara" class="input-text"></div>').insertAfter($("input[name=delivery_info]").parent());
+	$('<div class="finput field-wrap4 field-wrap-mobile-full"><label for="delivery_info_ap">Ap</label><input type="text" maxlength="40" name="delivery_info_ap" id="delivery_info_ap" class="input-text"></div>').insertAfter($("input[name=delivery_info_scara]").parent());
+
+
+	$("label[for=address]").html('Nume strada <span class="brand">*</span>')
+
+
+	$("#order_form").submit(function(event){
+
+		var original = $("input[name=delivery_info]").val().split('|')[0].trim();
+
+		$("input[name=delivery_info]").val(original);
+
+		$("input[name=delivery_info]").val($("input[name=delivery_info]").val() + "|" + $("input[name=delivery_info_scara]").val() + "|" + $("input[name=delivery_info_ap]").val());
+
+	});
+
+	if($("select[name=cross_sell]").prev().length > 0){
+		$("select[name=cross_sell]").prev().html('Accesorii suplimentare: <span class="brand">*</span>');
+	}
+
+</script><script>
+	setTimeout(function(){
+		$(".order-bump-box > div:first-child").find("button").click();
+	}, 1000);
+</script><script type="text/javascript">
+	$(document).ready(function(){
+		$('.footer .copyd').prepend('<p>Imaginile sunt simbolice. Furnizorul își rezervă dreptul de a comite erori tipografice.</p>');
+    });
+</script>
+<style type="text/css">
+
+.selection  {
+
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  height: 38px;
+
+}
+
+.select2-selection {
+
+  height: 38px!important;
+
+}
+
+span.select2-selection__arrow {
+
+  padding-top: 10px;
+
+}
+
+</style>
+<script>
+    $(document).ready(function() {
+
+      var bd_city = '';
+      var bd_state = '';
+
+        $(".list_dot li").text(function(index, text) {
+            return text.replace("GLS", "FAN");
+        });
+
+        $("label[for=city]").html('Localitate<span class="brand">*</span>');
+        $("#state").select2({ width: '100%', dropdownAutoWidth: true, containerCss : {"display":"block"} });
+        $("#city").select2({ width: '100%', dropdownAutoWidth: true, containerCss : {"display":"block"} });
+        $("#post_number").select2({
+          width: '100%',
+          dropdownAutoWidth: true,
+          containerCss : {"display":"block"},
+          ajax: {
+            url: 'https://s-mania.com/v1-includes/inc/handle-ro-inputs.php',
+            dataType: 'json',
+            data: function (params) {
+              var query = {
+                search: params.term,
+                page: params.page || 1,
+                city: bd_city,
+                state: bd_state
+              }
+
+              return query;
+            }
+          }
+        });
+
+
+        $("#city").siblings('.select2:first').css("opacity", "0.7");
+        $("#city").siblings('.select2:first').css("pointer-events", "none");
+        $("#post_number").siblings('.select2:first').css("opacity", "0.7");
+        $("#post_number").siblings('.select2:first').css("pointer-events", "none");
+
+
+
+        $.ajax({
+            url: "https://s-mania.com/v1-includes/inc/handle-ro-inputs.php",
+            type: "post",
+            dataType: 'json',
+            data: {
+                Type: "state",
+            },
+            success: function(data){
+
+                $("#state option").remove();
+                $('#state')
+                        .append($("<option></option>")
+                        .attr("value"," ")
+                        .text(" "));
+
+                $.each(data, function(i,e){
+                    $('#state')
+                        .append($("<option></option>")
+                        .attr("value",e)
+                        .text(e));
+                });
+            }
+        });
+
+
+        $("#state").change(function(){
+            console.log('test');
+         $("#city").siblings('.select2:first').css("opacity", "1");
+            $("#city").siblings('.select2:first').css("pointer-events", "all");
+
+            bd_state = $(this).val();
+
+            $.ajax({
+                url: "https://s-mania.com/v1-includes/inc/handle-ro-inputs.php",
+                type: "post",
+                dataType: 'json',
+                data: {
+                    Type: "city",
+                    State: this.value
+                },
+                success: function(data){
+                    //console.log(result);
+                    $("#city option").remove();
+                    $('#city')
+                        .append($("<option></option>")
+                        .attr("value"," ")
+                        .text(" "));
+
+                    $.each(data, function(i,e){
+                        $('#city')
+                            .append($("<option></option>")
+                            .attr("value",e)
+                            .text(e));
+                    });
+
+                    //console.log(data.length);
+
+                    if(data.length == 1){
+                        $("#post_number").siblings('.select2:first').css("opacity", "1");
+                        $("#post_number").siblings('.select2:first').css("pointer-events", "all");
+
+                        $.ajax({
+                            url: "https://s-mania.com/v1-includes/inc/handle-ro-inputs.php",
+                            type: "post",
+                            dataType: 'json',
+                            data: {
+                                Type: "zipcode",
+                                State: $("#state").val(),
+                                City: $("#city").val(),
+                            },
+                            success: function(data){
+                                //console.log(result);
+                                $("#post_number option").remove();
+                                $.each(data, function(i,e){
+                                    $('#post_number')
+                                        .append($("<option></option>")
+                                        .attr("value",e)
+                                        .text(e));
+                                });
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+        $("#city").change(function(){
+            $("#post_number").siblings('.select2:first').css("opacity", "1");
+            $("#post_number").siblings('.select2:first').css("pointer-events", "all");
+
+            bd_city = $(this).val();
+
+            /*$.ajax({
+                url: "https://s-mania.com/v1-includes/inc/handle-ro-inputs.php",
+                type: "post",
+                data: {
+                    Type: "zipcode",
+                    State: $("#state").val(),
+                    City: this.value
+                },
+                success: function(result){
+                    console.log(result);
+                    $("#post_number option").remove();
+                    var data = JSON.parse(result);
+                    $.each(data, function(i,e){
+                        $('#post_number')
+                            .append($("<option></option>")
+                            .attr("value",e)
+                            .text(e));
+                    });
+                }
+            });*/
+        });
+    });
+</script>
+
+<script type="text/javascript">
+
+$('#order_form').submit(function(e){
+
+    if($('#placilo').val() == 'braintree') {
+
+        let form = $(this);
+
+        // let terms_checked = $('input#pogoji_check').is(':checked');
+
+        if(!form.valid()/* || !terms_checked*/) {
+
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+
+            // console.log('Required field missing!');
+            // console.log('Form: '+form.valid());
+            // console.log('Terms: '+terms_checked);
+
+        }
+
+    }
+
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+
+  var smania_logo_url = 'https://s-mania.com/v1-includes/img/logo_smania_new_opt.png';
+  var smania_logo_alt_url = 'https://s-mania.com/v1-includes/img/logo_smania_new_opt_alt.png';
+  var smania_logo_top = '<div class="above-logo" style="background-color: white; text-align: center; padding: 5px; padding-top: 12px;"><img style="height: 50px; display: inline-block;" src="'+smania_logo_url+'"></div>';
+  var smania_logo_order = '<div class="order-logo" style="text-align:center;width:100%;margin:25px 0 -10px;"><img style="height: 50px; display: inline-block;" src="'+smania_logo_alt_url+'"></div>'
+
+  $(document).ready(function(){
+
+    if(!$('.above-logo')[0]) {
+
+      if($('.banner-top-holder')[0]) {
+
+        $('.banner-top-holder').after(smania_logo_top);
+
+      } else {
+
+        $('body').prepend(smania_logo_top);
+
+      }
+
+      $('#order').after(smania_logo_order);
+
+    }
+
+    $('.order-logo + p').css('padding-top','1.5em');
+
+  });
+
+</script>
+
+
+<script type="text/javascript">
+
+fbq('track', 'ViewContent', {
+
+    content_name: 'Dozator de săpun cu senzor Fizzy',
+    content_ids: ["avmil"],
+    content_type: 'product',
+    value: 135,
+    currency: 'RON'
+
+});
+
+</script><script src="https://js.braintreegateway.com/web/dropin/1.11.0/js/dropin.min.js"></script>
+<script src="js/braintree_ro.js"></script><script type="text/javascript">
+    $(function(){
+
+        $('#braintree-radio').one('click', function(){
+
+            $.ajax({
+                url: '?braintree-sdk=1',
+                type: 'POST',
+                success: function(res){
+
+                    $('body').append(res);
+                }
+            });
+        })
+
+    })
+</script>			<style>
+				.toggle-button--valo label, .toggle-button--valo label:before, .toggle-button--valo label:after {
+				    width: 310px!important;
+				}
+
+				.item-img:hover {
+				    transform: scale(1);
+				    opacity: .8;
+				}
+
+				.select2-results__option{
+					color: #000000;
+				}
+
+				@media only screen and (max-width: 625px){
+					.toggle-button--valo {
+						width: 100%!important;
+						margin-left: 20px!important;
+    					display: inline-grid;
+					    margin-bottom: 0px;
+					}
+				}
+			</style>
+
+
+</body>
+</html>
